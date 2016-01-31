@@ -105,16 +105,16 @@ Participants in this experiment were 132 children between the ages of 5 and 10 y
 
 On each round, 16 beetles (i.e., bugs) with the same body shape were used as stimuli. Bugs were defined by the presence or absence of 9 features: green body, orange eyes, antennae, big spots, tiny spots, legs, leaves, water droplets, and blue ``fur''. Two examples are shown in Figure~\ref{fig:example_bugs}. Each of these features was represented on a button, available for participants to query. Before participants were allowed to begin, the experimenter explained at least three of these buttons, randomly selected. An additional feature button depicted a particular body shape that was not relevant to the bugs on display. The hidden bug was randomly selected on each round, and each round had differently-shaped bug bodies, selected from a pool of 16 unique body shapes.
 
-\begin{figure}[!h]
+\begin{figure}[h]
   \centering
-  \includegraphics[width=0.25\textwidth]{figures/example_bugs}
+  \includegraphics[width=0.22\textwidth]{figures/example_bugs}
   \caption{Example bug types with all nine of the binary features present. One of 16 bug body shapes was used per round.}
   \label{fig:example_bugs}
 \end{figure} 
 
 The features were not uniformly distributed: some were more frequent than others (relevant to a maximum of eight bugs), while some were very infrequent (relevant to a minimum of 1 bug), with the partially-nested structure shown in Figure~\ref{fig:feature_table}. Thus, an efficient participant will choose a feature that is found on half of the bugs remaining onscreen. The abstract features in Figure~\ref{fig:feature_table} were randomly assigned to the visual features for each participant, and then remained consistent across rounds. This gave participants the opportunity to learn the structure across rounds, for example to perhaps figure out which visual features are most relevant to ask about first.
 
-\begin{figure}[!h]
+\begin{figure}[h]
   \centering
   \includegraphics[width=0.48\textwidth]{figures/feature_table}
   \caption{The abstract feature structure of the 16 exemplars used in each round. Each participant had these abstract features randomly assigned to the visual features, but had a consistent assignment used round-to-round.}
@@ -125,7 +125,7 @@ The features were not uniformly distributed: some were more frequent than others
 
 After being trained by an experimenter on a simpler version of the task with unrelated stimuli (a dog trying to find it's house), participants played 5 or more rounds of an iPad game asking them to identify which one of 16 bugs is hidden under a rug (see Figure~\ref{fig:task-overview}). The task alternates between the query phase and the elimination phase. In the query phase, players can either query individual bugs, or use feature queries (e.g., ``Is the hidden bug green?'') to find out whether the hidden bug has a particular feature. If a single exemplar is queried by tapping on it, feedback is immediate: if it happens to be the hidden bug, a smiley face appears and the round is done, whereas if the tapped exemplar is not the hidden bug, a red ``X'' is shown on top of the tapped bug and the bug becomes grayed out (i.e., eliminated). After a feature query, the bug gives feedback, saying ``Yes!'' (it has the feature; narrated by the experimenter), or ``No!'' (it does not have the feature). It is now the elimination phase, during which bugs that are inconsistent with the feedback are eliminated, and the hypothesis space is thus narrowed. Participants were assigned in counterbalanced order to one of two hypothesis-updating conditions. In the automatic-update condition, after the feedback from a feature query, subjects merely press the ``Eliminate'' button and the irrelevant bugs are eliminated (grayed out), and the game returns to the guessing phase. In the manual-update condition, after a subject makes a feature query and sees feedback, they must select each bug that is consistent with the feedback for that feature, as shown in the top right of Figure~\ref{fig:task-overview}. Bugs are selected by tapping, and can be deselected by tapping again. Only when participants were done selecting bugs did the experimenter press the ``Eliminate'' button, which eliminated any bugs that were not selected. Although manual-update participants received training for the manual elimination in the dog house training task, as well as gentle reminders in the first round of the bug game, it should be noted that it is possible for mistakes to be made during manual updating--unlike in the automatic condition.
 
-\begin{figure}[!h]
+\begin{figure}[h]
   \centering
   \includegraphics[width=0.5\textwidth]{figures/task_overview}
   \caption{Task overview: in the upper left, a feature button is used, asking if the bug hidden under the rug is green. Given feedback (``Yes!''), participants in the manual update condition select the bugs that are consistent with this new information (upper right), whereas in the automatic condition the consistent bugs are selected by the game. Players in both conditions press the red button to return to the button phase, and again either choose a feature button or query a single bug.}
@@ -145,7 +145,7 @@ Before we delve into the information-theoretic analysis that will ultimately rev
 
 There were significant interactions of condition and query type (F(1,1312) = 41.56, $p<.001$), age and query type (F(1,1312) = 14.45, $p<.001$), and round and query type (F(1,1312) = 11.89, $p<.001$), as well as a significant three-way interaction of condition, age, and query type (F(1,1312) = 13.39, $p<.001$). Figure~\ref{fig:clicks-per-agecond} shows the average number of query types used per round for participants of each age. Across all ages in the manual-update condition there were more exemplar queries than feature queries. In comparison to the manual condition, there were fewer exemplar queries in the automatic condition ($M_{man} = 5.0$, $M_{auto} = 3.2$, $t(103.5)=4.1$, $p<.001$), while there were more feature queries in the automatic condition ($M_{auto} = 3.8$) ($M_{man} = 3.3$, $t(102.9)=2.1$, $p<.05$). 
 
-\begin{figure}[!h]
+\begin{figure}[h]
   \centering
   \includegraphics[width=0.49\textwidth]{figures/clicks_by_age_condition_query_type}
   \caption{Mean number of queries of each type per round by age and condition. Error bars show +/-1SE.}
@@ -169,7 +169,7 @@ It is reasonable to suggest that manual-update participants may be discouraged f
 
 Participants' median RT for each button type (feature and exemplar) was computed for each round and these data were subjected to an ANCOVA with condition as a between-subjects factor, and both age and round number as covariates. This ANCOVA indicated significant main effects of button type (F(1,1317) = 5.30, $p<.05$) and age (F(1,1317) = 12.01, $p<.001$), as well as a marginal effect of condition (F(1,1317) = 3.56, $p = .06$). Overall, participants took much longer to make feature queries (7,470 ms) than to press an exemplar button (2,680 ms), perhaps indicating reluctance or greater consideration of their options for the mentally-taxing option of choosing a feature to query. There were also significant interaction effects of button type and condition (F(1,1317) = 69.62, $p<.001$); age and round number (F(1,1317) = 14.74, $p<.001$); and button type, age, and round number (F(1,1317) = 19.24, $p<.001$). Figure~\ref{fig:basic-rt} shows the mean of subjects' median RTs for each button type, split by condition. Feature queries were slower in the manual-update condition, which could indicate 1) more careful thought given to features in this condition, and/or 2) general hesitance to use feature queries, perhaps because it is time-consuming (even difficult) to manually update hypotheses. Thus, we next examine whether many errors are made under manual updating.
 
-\begin{figure}[!h]
+\begin{figure}[h]
   \centering
   \includegraphics[width=0.33\textwidth]{figures/RT_by_condition_query_type}
   \caption{Mean of participants' median RT for each condition and query type. Exemplar queries were faster than feature queries, which represent a more complex strategy and thus likely required more thought. Feature queries were slower in the manual-update condition: it seems the difficulty of updating in this condition made participants think even more carefully about using feature queries. Error bars show +/-1SE.}
@@ -219,7 +219,7 @@ The EIG for each participants' feature queries\footnote{Exemplar query EIGs are 
 %  \label{fig:EIG_by_round}
 %\end{figure} 
 
-\begin{figure}[!h]
+\begin{figure}[t]
   \centering
   \includegraphics[width=0.49\textwidth]{figures/EIG_by_age_n_condition}
   \caption{Mean expected information gain for feature queries by age and condition, with simulated subjects making random feature queries for comparison. Manual-update subjects had higher EIG than automatic-update subjects, and both were better than random--but suboptimal (~1). Bars show +/-1SE.}
@@ -237,7 +237,7 @@ In both conditions, the first three clicks are more likely to be feature than ex
 %Feature queries are made at a rate that is correlated with the number of exemplars they are relevant to ($r=.79$, $t(8)=3.6$, $p<.01$). 
 % \hl{...maybe simulate based on the human choice probabilities, and compare EIG?}
 
-\begin{figure}[!h]
+\begin{figure}[h]
   \centering
   \includegraphics[width=0.4\textwidth]{figures/query_type_prop_by_click}
   \vspace{-.1cm}
