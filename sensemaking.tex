@@ -348,7 +348,7 @@ presses the children made as they learned to identify the bug.}
 
 Participants in this experiment were 132 children between the ages of 5 and 10 
 years old who were recruited at the American Museum of Natural History's 
-Discovery Room.Of the 134 children recruited, we analyze the rounds from 121 
+Discovery Room. Of the 134 children recruited, we analyze the rounds from 121 
 children (21 5-year-olds, 20 6-year-olds, 22 7-year-olds, 20 8-year-olds, 20 9-year-olds, 
 and 18 10-year-olds) who completed 5 or more rounds of the game.
 
@@ -406,7 +406,7 @@ should be preceded with a "Design" section which highlight the main
 aspects we are manipulating and the feature-versus-exemplar query issue?}
 
 After being trained by an experimenter on a simpler version of the task with 
-unrelated stimuli (a dog trying to find it's house), participants played 5 or more 
+unrelated stimuli, participants played 5 or more 
 rounds of an iPad game asking them to identify which one of 16 bugs is hidden 
 under a rug (see Figure~\ref{fig:task-overview}). The task alternates between the 
 query phase and the elimination phase. In the query phase, players can either query 
@@ -465,6 +465,47 @@ randomly in the task.  This agent took on average 8.9 queries (median: 9) to com
 task.  \hl{why is this overall analysis but the next section also analyzes
 number of queries per round?}
 
+\subsubsection{Response Times}
+
+Participants' median RT for each button type (feature and exemplar) was computed 
+for each round and these data were subjected to an ANCOVA with condition (automatic, manual) as a 
+between-subjects factor, and both age and round number as covariates. There
+were significant main effects of button type (F(1,1317) = 5.30, $p<.
+05$) and age (F(1,1317) = 12.01, $p<.001$). Overall, participants took much longer to 
+make feature queries (7,470 ms) than to press an exemplar button (2,680 ms), 
+perhaps indicating more though before making more complex queries. There were also significant 
+interaction effects of button type and condition (F(1,1317) = 69.62, $p<.001$); age 
+and round number (F(1,1317) = 14.74, $p<.001$); and button type, age, and round 
+number (F(1,1317) = 19.24, $p<.001$). Figure~\ref{fig:basic-rt} shows the mean of 
+subjects' median RTs for each button type, split by condition. Feature queries were 
+slower in the manual-update condition, which could indicate 1) more careful thought 
+given to features in this condition, and/or 2) general hesitance to use feature 
+queries, perhaps because it is time-consuming (even difficult) to manually update 
+hypotheses. 
+
+\hl{I'm not sure to make of the big ANCOVA here.  The main point just seems to be that
+feature queries too longer in both the automatic and manual condition.  I don't have
+that strong of a prediction nor interest in the effect of age because it is complex.  on
+one hand we want to interpret longer RT = more thinking, but of course little babies
+will be slower probably and so it'll look like they are more thoughtful.  to simplify
+lets' just show stats that more or less reflect what is in the figure...  ANOVA on
+button type, condition, hopefully showing main effect and maybe an interaction}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.33\textwidth]{figures/RT_by_condition_query_type}
+  \caption{Mean of participants' median RT for each condition and query type. 
+Exemplar queries were faster than feature queries, which represent a more complex 
+strategy and thus likely required more thought. Feature queries were slower in the 
+manual-update condition: it seems the difficulty of updating in this condition made 
+participants think even more carefully about using feature queries. Error bars show 
++/-1SE.}
+  \label{fig:basic-rt}
+\end{figure} 
+%\hl{maybe leave out section from conference paper...or just leave out graph?}
+
+
+
 \subsubsection{Querying Behavior}
 
 Participants' mean number of queries per round were subjected to an 
@@ -473,7 +514,7 @@ covariates. This analysis indicated significant main effects of condition (F(1,1
 14.90, $p<.001$) and age (F(1,1312) = 29.48, $p<.001$), as well as marginal main 
 effects of round (F(1,1312) = 3.09, $p<.08$) and query type (F(1,1312) = 3.47, $p=.
 06$). Overall, older children require fewer total queries to complete a round, 
-evidenced by a significant negative correlation with age ($t(119) = 2.50$, $p=.01$). 
+evidenced by a significant negative correlation with age ($t(119) = 2.50$, $p=.01$) \hl{What is the correlation coefficient?}. 
 Participants' mean number of feature queries made per round was 3.6, and their 
 mean number of exemplar queries was 4.1, lower than the simulated random 
 rounds' mean number of feature queries (6.5) and exemplar queries (5.3), but above 
@@ -502,6 +543,10 @@ Error bars show +/-1SE.}
   \label{fig:clicks-per-agecond}
 \end{figure} 
 
+\hl{Ok, this big ANCOVA is also a little hard to interpret because of the many
+higher order interactions.  The sentence following this comment is really the only
+real take-home from this section in my view.  It is possible that the analysis could
+be simplified to just focus on that... similar to my suggestion above about reaction time.}
 In summary, it is clear that the manual-update condition results in fewer feature 
 queries (i.e., constraint-seeking questions), and more reliance on exemplar queries. 
 %%\hl{ANCOVA on total queries per round shows advantage for age, only a 
@@ -515,6 +560,10 @@ the following analyses, we thus investigate errors in manual updating, as well a
 response time patterns and information theoretic analyses that will indicate whether 
 the quality of feature queries varied in the two update conditions.
 
+\hl{going from this section, I wanted to make a transition of "although counting
+clicks is interesting, as the game unfolds different queries are more or less useful.
+thus, in the next section we take a more sophisticated model-based approach to
+understanding the quality of children's question asking}
 % Automatic subjects take fewer queries (6.7) than manual subjects (8.1; 
 %$t(41)=2.6$, $p=.01$). Feature query usage tends to drop off across rounds.
 
@@ -525,39 +574,7 @@ the quality of feature queries varied in the two update conditions.
 %  \label{fig:query-prop-round}
 % \end{figure} 
   \vspace{.05cm}
-\subsubsection{Response Times}
-
-Participants' median RT for each button type (feature and exemplar) was computed 
-for each round and these data were subjected to an ANCOVA with condition as a 
-between-subjects factor, and both age and round number as covariates. This 
-ANCOVA indicated significant main effects of button type (F(1,1317) = 5.30, $p<.
-05$) and age (F(1,1317) = 12.01, $p<.001$), as well as a marginal effect of 
-condition (F(1,1317) = 3.56, $p = .06$). Overall, participants took much longer to 
-make feature queries (7,470 ms) than to press an exemplar button (2,680 ms), 
-perhaps indicating reluctance or greater consideration of their options for the 
-mentally-taxing option of choosing a feature to query. There were also significant 
-interaction effects of button type and condition (F(1,1317) = 69.62, $p<.001$); age 
-and round number (F(1,1317) = 14.74, $p<.001$); and button type, age, and round 
-number (F(1,1317) = 19.24, $p<.001$). Figure~\ref{fig:basic-rt} shows the mean of 
-subjects' median RTs for each button type, split by condition. Feature queries were 
-slower in the manual-update condition, which could indicate 1) more careful thought 
-given to features in this condition, and/or 2) general hesitance to use feature 
-queries, perhaps because it is time-consuming (even difficult) to manually update 
-hypotheses. Thus, we next examine whether many errors are made under manual 
-updating.
-
-\begin{figure}[h]
-  \centering
-  \includegraphics[width=0.33\textwidth]{figures/RT_by_condition_query_type}
-  \caption{Mean of participants' median RT for each condition and query type. 
-Exemplar queries were faster than feature queries, which represent a more complex 
-strategy and thus likely required more thought. Feature queries were slower in the 
-manual-update condition: it seems the difficulty of updating in this condition made 
-participants think even more carefully about using feature queries. Error bars show 
-+/-1SE.}
-  \label{fig:basic-rt}
-\end{figure} 
-%\hl{maybe leave out section from conference paper...or just leave out graph?}
+  
 
 \subsubsection{Manual Update Mistakes}
 
@@ -581,6 +598,18 @@ the ease of automatic updating?
 %we only be analyzing first 5 or 6 rounds in ANOVAs?? 
 
 \subsubsection{Expected Information Gain}
+
+
+
+\citeA{Nelson:2014} studied a 20 questions task using another familiar domain: 
+people that varied on familiar features (e.g., gender, hair color, etc.). That study 
+showed 8-10 year-old children searched adaptively, in the sense that they tended to 
+ask questions about features that appear often in the real world, and that roughly 
+bisect the search space. Our study asks if and when children are able to learn these 
+feature distributions in an unfamiliar hypothesis space, and whether they are able to 
+use this knowledge to efficiently search that space.
+\hl{This paragraph shouldn't go here, but I think the reference/discussion of
+Nelson could appear more naturally here than in the previous intro section}
 
 Each successive query reduces the size of the remaining hypothesis space to some 
 degree. The appropriate way to analyze the contextual sensitivity (i.e., are they 
@@ -669,13 +698,6 @@ better than random--but suboptimal (~1). Bars show +/-1SE.}
 \end{figure} 
 
 
-\citeA{Nelson:2014} studied a 20 questions task using another familiar domain: 
-people that varied on familiar features (e.g., gender, hair color, etc.). That study 
-showed 8-10 year-old children searched adaptively, in the sense that they tended to 
-ask questions about features that appear often in the real world, and that roughly 
-bisect the search space. Our study asks if and when children are able to learn these 
-feature distributions in an unfamiliar hypothesis space, and whether they are able to 
-use this knowledge to efficiently search that space.
 
 \subsubsection{Individual Variation and By-click Analyses}
 
