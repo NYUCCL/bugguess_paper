@@ -382,7 +382,7 @@ children attempted to identify by asking questions.
   \centering
   \includegraphics[width=0.22\textwidth]{figures/example_bugs}
   \caption{Examples of two bug types with all nine of the binary features present. Each round used one of the 16 
-body shapes, with each bug on a round having a unique combination of features.}
+body shapes. } % Each bug in a round had a unique combination of features.
   \label{fig:example_bugs}
 \end{figure} 
 
@@ -393,7 +393,7 @@ bugs), while some were very infrequent (relevant to only 1 bug), with an
 abstract structure shown in Figure~\ref{fig:feature_table}. This introduced
 strong differences in the informational utility of each feature.  For example,
 given no other information it would be informative to ask about feature F1
-because is it shared with roughly half the possible bugs.  In contrast, feature
+because is it shared with half the possible bugs.  In contrast, feature
 F9 is less informative on the first trial because most of the bugs do no have this
 feature. The abstract features in Figure~
 \ref{fig:feature_table} were randomly assigned to the visual features for each 
@@ -444,7 +444,7 @@ feature query, subjects merely press the ``Eliminate'' button and the irrelevant
 are eliminated (grayed out), and the game returns to the guessing phase. In the 
 manual-update condition, after a subject makes a feature query and sees feedback, 
 they must select each bug that is consistent with the feedback for that feature, as 
-shown in the top right of Figure~\ref{fig:task-overview}. Bugs are selected by 
+shown in the top right of Figure~\ref{fig:task-overview}. Bugs are selected (denoted by a green box) by 
 tapping, and can be deselected by tapping again. Only when participants were done 
 selecting bugs did the experimenter press the ``Eliminate'' button, which eliminated 
 any bugs that were not selected. Although manual-update participants received 
@@ -472,42 +472,28 @@ and again either choose a feature button or query a single bug.}
 
 We analyzed only the first 10 rounds of each game (only 8 children played more than 
 10 rounds, including one who played 51 rounds). This covers 722 rounds from 121 
-children. The mean number of queries (feature 
-and exemplar \hl{Should we just adopt constraint-seeking versus scanning throughout for consistency?} taken to complete a round was 6.5 in the automatic-update condition, 
+children. The mean number of total queries (feature 
+and exemplar) taken to complete a round was 6.5 in the automatic-update condition, 
 and 7.6 in the manual-update condition (Kolmogorov-Smirnov test, $D = 
-0.13$, $p<.01$). However, the median queries taken per 
-condition was 6: are these two distributions different? \hl{i don't know... also what
-condition are you talking about here?}.  For comparison, 
+0.13$, $p<.01$). However, the median queries taken for each 
+condition was 6: are these two distributions different?  For comparison, 
 we simulated 700 rounds of the game from an agent who clicked
 randomly in the task.  This agent took on average 8.9 queries (median: 9) to complete the
-task.  \hl{why is this overall analysis but the next section also analyzes
-number of queries per round?}
+task.  %\hl{why is this overall analysis but the next section also analyzes number of queries per round? GK: it's by query type in future sections..this section is overall (only by cond}
 
 \subsubsection{Response Times}
 
-Participants' median RT for each button type (feature and exemplar) was computed 
-for each round and these data were subjected to an ANCOVA with condition (automatic, manual) as a 
-between-subjects factor, and both age and round number as covariates. There
-were significant main effects of button type (F(1,1317) = 5.30, $p<.
-05$) and age (F(1,1317) = 12.01, $p<.001$). Overall, participants took much longer to 
+Participants' median RT for each button type (feature and exemplar) was computed and these data were subjected to a 2-way ANOVA with condition (automatic, manual) as a 
+between-subjects factor and button type as a within-subject factor. There
+were significant main effects of button type (F(1,234) = 90.70, $p<.
+001$) and condition (F(1,234) = 4.05, $p<.05$). On average, participants took longer to make queries in the manual condition (4800 ms) than in the automatic condition (4000 ms). Overall, participants took much longer to 
 make feature queries (7,470 ms) than to press an exemplar button (2,680 ms), 
-perhaps indicating more though before making more complex queries. There were also significant 
-interaction effects of button type and condition (F(1,1317) = 69.62, $p<.001$); age 
-and round number (F(1,1317) = 14.74, $p<.001$); and button type, age, and round 
-number (F(1,1317) = 19.24, $p<.001$). Figure~\ref{fig:basic-rt} shows the mean of 
-subjects' median RTs for each button type, split by condition. Feature queries were 
-slower in the manual-update condition, which could indicate 1) more careful thought 
-given to features in this condition, and/or 2) general hesitance to use feature 
+perhaps indicating more thought before making more complex queries. There was also a significant 
+interaction effect of button type and condition (F(1,234) = 11.85, $p<.001$). Figure~\ref{fig:basic-rt} shows the mean of subjects' median RTs for each button type, split by condition. Feature queries were 
+slower in the manual-update condition (7900 ms vs. 5430 ms in automatic), which could indicate 1) more careful thought given to features in this condition, and/or 2) general hesitance to use feature 
 queries, perhaps because it is time-consuming (even difficult) to manually update 
-hypotheses. 
-
-\hl{I'm not sure to make of the big ANCOVA here.  The main point just seems to be that
-feature queries too longer in both the automatic and manual condition.  I don't have
-that strong of a prediction nor interest in the effect of age because it is complex.  on
-one hand we want to interpret longer RT = more thinking, but of course little babies
-will be slower probably and so it'll look like they are more thoughtful.  to simplify
-lets' just show stats that more or less reflect what is in the figure...  ANOVA on
-button type, condition, hopefully showing main effect and maybe an interaction}
+hypotheses. Exemplar queries were somewhat faster in the manual-update condition (1850 ms vs. 2570 in automatic),
+which could indicate their greater readiness to use the simpler strategy.
 
 \begin{figure}[h]
   \centering
@@ -523,28 +509,18 @@ participants think even more carefully about using feature queries. Error bars s
 %\hl{maybe leave out section from conference paper...or just leave out graph?}
 
 
-
 \subsubsection{Querying Behavior}
 
 Participants' mean number of queries per round were subjected to an 
-ANCOVA with condition and query type as factors and age and round number as 
-covariates. This analysis indicated significant main effects of condition (F(1,1312) = 
-14.90, $p<.001$) and age (F(1,1312) = 29.48, $p<.001$), as well as marginal main 
-effects of round (F(1,1312) = 3.09, $p<.08$) and query type (F(1,1312) = 3.47, $p=.
-06$). Overall, older children require fewer total queries to complete a round, 
-evidenced by a significant negative correlation with age ($t(119) = 2.50$, $p=.01$) \hl{What is the correlation coefficient?}. 
-Participants' mean number of feature queries made per round was 3.6, and their 
-mean number of exemplar queries was 4.1, lower than the simulated random 
-rounds' mean number of feature queries (6.5) and exemplar queries (5.3), but above 
-the optimal.\footnote{Note that although there are at first more exemplars (16) than 
-feature buttons (10) to query, after the first click or two there will likely be few 
+ANOVA with condition and age group (5-7 vs. 8-10) as between-subjects factors and query type as a within-subject factor. This analysis indicated significant main effects of condition (F(1,229) = 4.60, $p<.05$) and age group (F(1,229) = 12.20, $p<.001$), and no significant main effect of query type (F(1,229) = 0.10, $p=.75$). Overall, older children required fewer total queries to complete a round ($M_{5-7} = 4.2$, $M_{8-10} = 3.3$),
+also evidenced by a significant negative correlation with age ($t(119) = 3.24$, $p=.001$, $r=-.28$). There were significant interactions of condition and query type (F(1,229) = 22.18, 
+$p<.001$), and age group and query type (F(1,229) = 12.25, $p<.001$). No other interactions were significant (all Fs $<1$). Automatic-update participants made a mean of 3.2 exemplar queries and 3.8 feature queries, while manual-update participants made a mean of 5.0 exemplar queries and 3.3 feature queries.
+These query rates are all lower than the simulated random rounds' mean number of feature queries (6.5) and exemplar queries (5.3), but above the optimal.\footnote{Note that although there are at first more exemplars (16) than 
+feature buttons (10), after the first click or two there will likely be few 
 exemplars remaining to click, which is why the expected number of exemplar 
 queries is lower than the expected number of feature queries in the simulation.} 
 
-There were significant interactions of condition and query type (F(1,1312) = 41.56, 
-$p<.001$), age and query type (F(1,1312) = 14.45, $p<.001$), and round and query 
-type (F(1,1312) = 11.89, $p<.001$), as well as a significant three-way interaction of 
-condition, age, and query type (F(1,1312) = 13.39, $p<.001$). Figure~\ref{fig:clicks-per-agecond} 
+Figure~\ref{fig:clicks-per-agecond} 
 shows the average number of query types used per round for 
 participants of each age. Across all ages in the manual-update condition there were 
 more exemplar queries than feature queries. In comparison to the manual condition, 
@@ -555,16 +531,12 @@ $p<.05$).
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.49\textwidth]{figures/clicks_by_age_condition_query_type}
+  \includegraphics[width=0.45\textwidth]{figures/clicks_by_ageGroup_condition_query_type}
   \caption{Mean number of queries of each type per round by age and condition. 
 Error bars show +/-1SE.}
   \label{fig:clicks-per-agecond}
 \end{figure} 
 
-\hl{Ok, this big ANCOVA is also a little hard to interpret because of the many
-higher order interactions.  The sentence following this comment is really the only
-real take-home from this section in my view.  It is possible that the analysis could
-be simplified to just focus on that... similar to my suggestion above about reaction time.}
 In summary, it is clear that the manual-update condition results in fewer feature 
 queries (i.e., constraint-seeking questions), and more reliance on exemplar queries. 
 %%\hl{ANCOVA on total queries per round shows advantage for age, only a 
@@ -612,12 +584,8 @@ automatic updating of the hypothesis space. However, RT analyses indicated that
 feature queries took longer under manual updating: is this just reluctance, or could it 
 be that feature queries were more carefully considered in this condition than under 
 the ease of automatic updating? 
-% also tried with round (max of 13...but only 1 of those) and had no effect...should 
-%we only be analyzing first 5 or 6 rounds in ANOVAs?? 
 
 \subsubsection{Expected Information Gain}
-
-
 
 \citeA{Nelson:2014} studied a 20 questions task using another familiar domain: 
 people that varied on familiar features (e.g., gender, hair color, etc.). That study 
@@ -668,12 +636,11 @@ The EIG for each participants' feature queries\footnote{Exemplar query EIGs are
 less interesting, as they are a simple function of how many remaining hypotheses 
 there are. Participants' choice of feature query, on the other hand, indicates how 
 sensitive they are to the relevance of each feature--and to the context of their 
-current situation.} were computed, and their mean EIG for each round were 
-subjected to an ANCOVA with condition as a between-subjects factor, and both age 
-and round number as covariates. This ANCOVA indicated significant main effects of 
-condition (F(1,519) = 42.92, $p<.001$), age (F(1,519) = 4.15, $p<.05$), and round 
-(F(1,519) = 6.33, $p = .01$), with no significant interaction effects. Figure~
-\ref{fig:EIG_by_age} shows mean EIG per feature query by age and condition. Mean 
+current situation.} were computed, and their mean EIG was 
+subjected to an ANOVA with condition and age group (5-7 vs. 8-10) as between-subjects factors. 
+This ANOVA indicated significant main effects of condition (F(1,115) = 55.0, $p<.001$) 
+and age group (F(1,115) = 12.42, $p<.001$), with no significant interaction effect (F(1,115) = 0.2, $p>.05$).
+Figure~\ref{fig:EIG_by_age} shows mean EIG per feature query by age group and condition. Mean 
 EIG of feature queries for each subject was marginally significantly correlated with 
 age ($t(116)=1.77$, $p=.08$, $r=.16$), showing that older children tended to use 
 more relevant feature queries. The feature queries made by participants in the 
@@ -707,11 +674,11 @@ participants.
 
 \begin{figure}[t]
   \centering
-  \includegraphics[width=0.49\textwidth]{figures/EIG_by_age_n_condition}
-  \caption{Mean expected information gain for feature queries by age and condition, 
+  \includegraphics[width=0.4\textwidth]{figures/EIG_by_ageGroup_n_condition}
+  \caption{Mean expected information gain for feature queries by age group and condition, 
 with simulated subjects making random feature queries for comparison. Manual-
 update subjects had higher EIG than automatic-update subjects, and both were 
-better than random--but suboptimal (~1). Bars show +/-1SE.}
+better than random--but suboptimal (1). Older children had higher EIG than younger children. Bars show +/-1SE.}
   \label{fig:EIG_by_age}
 \end{figure} 
 
@@ -740,7 +707,7 @@ queries.
 
 \begin{figure}[!h]
   \centering
-  \includegraphics[width=0.4\textwidth]{figures/query_type_prop_by_click}
+  \includegraphics[width=0.43\textwidth]{figures/query_type_prop_by_click}
   \vspace{-.1cm}
   \caption{Proportion of feature vs. item queries by click for each update condition. 
 People in both conditions are more likely to make feature queries rather than 
