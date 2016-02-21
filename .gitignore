@@ -10,3 +10,13 @@ sensemaking.log
 sensemaking.synctex.gz
 
 sensemaking.pdf
+
+*.aux
+
+*.bbl
+
+*.blg
+
+*.log
+
+*.gz
