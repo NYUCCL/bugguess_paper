@@ -1,6 +1,8 @@
 
-\documentclass[10pt,letterpaper]{article}
-\usepackage{cogsci}
+%\documentclass[10pt,letterpaper]{article}
+%\usepackage{cogsci}
+
+\documentclass[man,floatsintext]{apa6}
 
 \usepackage[nodoi]{apacite}
 \usepackage{graphicx, subcaption}
@@ -10,7 +12,7 @@
 
 \usepackage{soul} % for \hl
 \usepackage{color}
-\renewcommand\bibliographytypesize{\footnotesize}
+%\renewcommand\bibliographytypesize{\footnotesize}
 \usepackage{pslatex}
 % \usepackage{multirow}
 
@@ -52,80 +54,70 @@ reasoning
 \section{Introduction} 
 
 
-% GK: all of this stuff is well-written and somewhat relevant, but we prob don't need 
-%6 paragraphs of general intro...help me delete? 
-% I'm tempted to say: Figuring out how to efficiently navigate a hypothesis space--
+%Figuring out how to efficiently navigate a hypothesis space--
 %from learning the diagnostic features to asking the appropriate questions to 
 %appropriately updating the space in the face of new evidence--is an essential part of 
-%science, and of life, in general. So this is what we do.
-A central aim of science education is to teach students how to approach the task of 
-understanding their environment. Rather than teaching only a catalogue of facts 
-about the biological and physical worlds, current standards emphasize teaching the 
-conceptual and analytic skills that underlie science: detecting patterns in 
-environments that initially appear chaotic, abstracting the general principles that can 
-be used to understand and predict events, and importantly learning how to ask 
-informative questions to reveal these patterns and principles when they are not 
-immediately obvious \cite{Bransford:2000,Donovan:2005,Duschl:2007}. 
+%science, and of life, in general. 
+A central part of science--and life, in general--is figuring out how to understand our environment. 
+A variety of conceptual and analytical skills are required in order to detect patterns in 
+environments that initially appear chaotic, and to abstract the general principles that can 
+be used to understand and predict events. A skill of central importance is learning how to ask 
+informative questions to reveal hidden features when they are not 
+immediately obvious. In order to discover knowledge, whether in a real science experiment or 
+merely when figuring out a new toy or gadget, children must learn: 1) which 
+observable features are relevant to test, 2) how to intervene on the world in a 
+context-sensitive manner in order to gather additional information about hidden 
+feature values, and 3) how to integrate new evidence to update their hypothesis space.
 
-%These aims guide even the earliest, most foundational components of science 
-%education. In order to discover knowledge, whether in a real science experiment or 
-%merely when figuring out a new toy or gadget, children must learn: 1) which 
-%observable features are relevant to test, 2) how to intervene on the world in a 
-%context-sensitive manner in order to gather additional information about hidden 
-%feature values, and 3) how to integrate new evidence to update their hypothesis 
-%space.
-
-%%Children's developing abilities to engage in these basic steps of scientific 
-%thinking are on full display in informal science learning environments, such as at 
-%science and children's museums. Indeed, a central goal of these environments is to 
-%provide children with hands-on opportunities to learn from their own explorations, to 
-%enable them to gain active experience with the steps of scientific investigation, to 
-%discover new knowledge, and to develop enthusiasm for and interest in science 
-%\cite{Bell:2009,Fenichel:2010}. As a result, we believe that informal science 
-%environments provide an excellent domain in which to explore the psychological 
-%processes related to the development of understanding.
+Children's developing abilities to engage in these basic steps of scientific 
+thinking are on full display in informal science learning environments, such as at 
+science and children's museums. Indeed, a central goal of these environments is to 
+provide children with hands-on opportunities to learn from their own explorations, to 
+enable them to gain active experience with the steps of scientific investigation, to 
+discover new knowledge, and to develop enthusiasm for and interest in science 
+\cite{Bell:2009,Fenichel:2010}. As a result, we believe that informal science 
+environments provide an excellent domain in which to explore the psychological 
+processes related to the development of understanding.
 
 % only keep all the sensemaking framing in the journal paper?? JOURNAL
-%Informal science learning rests on the cognitive capacity for ``sensemaking'' 
-%\cite{Renner:2011}. 
-%making, as it is understood in the cognitive and human-
-%computer interaction literature, refers to the process of generating meaningful 
-%explanations or understandings for possibly incomplete or noisy data patterns in the 
-%environment \cite{Russell:1993,Klein:2006a,Klein:2006b}. In contrast to simple 
-%pattern recognition or categorization, sensemaking is a highly-volitional process that 
-%involves the continual evaluation of new evidence or data, and repeated information 
-%gathering. As such, the cognitive processes underlying sensemaking are often 
-%conceptualized a loop where one component process feeds into the next in a 
-%repeating sequence.
-% (see Figure~\ref{fig:sensemaking_loop}).
+Informal science learning rests on the cognitive capacity for ``sensemaking'' 
+\cite{Renner:2011}. Sensemaking, as it is understood in the cognitive and human-
+computer interaction literature, refers to the process of generating meaningful 
+explanations or understandings for possibly incomplete or noisy data patterns in the 
+environment \cite{Russell:1993,Klein:2006a,Klein:2006b}. In contrast to simple 
+pattern recognition or categorization, sensemaking is a highly-volitional process that 
+involves the continual evaluation of new evidence or data, and repeated information 
+gathering. As such, the cognitive processes underlying sensemaking are often 
+conceptualized a loop where one component process feeds into the next in a 
+repeating sequence, as shown in Figure~\ref{fig:sensemaking_loop}.
 
-%\begin{figure}[!h]
-  %\centering
-  %\includegraphics[width=0.45\textwidth]{figures/sensemaking_loop}
- % \caption{The sensemaking loop depicts the successive cognitive process that are 
-%engaged when attempting to derive a meaningful understanding of an initially 
-%ambiguous situation. The stages of the loop closely mirror the process of scientific 
-%reasoning engaged by scientists. However, a similar set of inductive processes are 
-%at play in many real-world situations (e.g., working an unfamiliar ATM machine, 
-%reading a complex nutrition label).}
-%  \label{fig:sensemaking_loop}
-%\end{figure} 
+\begin{figure}[!h]
+  \centering
+  \includegraphics[width=0.45\textwidth]{figures/sensemaking_loop}
+  \caption{The sensemaking loop depicts the successive cognitive process that are 
+engaged when attempting to derive a meaningful understanding of an initially 
+ambiguous situation. The stages of the loop closely mirror the process of scientific 
+reasoning engaged by scientists. However, a similar set of inductive processes are 
+at play in many real-world situations (e.g., working an unfamiliar ATM machine, 
+reading a complex nutrition label).}
+  \label{fig:sensemaking_loop}
+\end{figure} 
 
 %While the sensemaking loop just described is fairly abstract, the goal of the 
 %present study is to test and elaborate this theory with the aim of better 
 %understanding how to structure formal and informal learning experiences in 
 %developmentally appropriate ways. 
 % JOURNAL
-%This basic sensemaking framework can be instantiated as a computational 
-%information processing model \cite{Gureckis:2012,Gureckis:2009,Markant:2012}. 
-%The advantage of this formal model is that it allows detailed, testable predictions 
-%about behavior. The model-based theory suggests possible bottlenecks that might 
-%serve as developmental limitations on learning. For example, young learners may be 
-%able to correctly update their beliefs about a set of hypotheses given a set of data, 
-%but have trouble using the remaining hypothesis space to guide future information 
-%search. This study explores the development of the data-gathering and updating 
-%stages in children, with the aim of developing a more complete understanding of the 
-%learning abilities of young children.
+This basic sensemaking framework can be instantiated as a computational 
+information processing model \cite{Gureckis:2012,Gureckis:2009,Markant:2012}. 
+The advantage of this formal model is that it allows detailed, testable predictions 
+about behavior. The model-based theory suggests possible bottlenecks that might 
+serve as developmental limitations on learning. For example, young learners may be 
+able to correctly update their beliefs about a set of hypotheses given a set of data, 
+but have trouble using the remaining hypothesis space to guide future information 
+search. The present study explores the development of the data-gathering and updating 
+stages in children, with the aim of developing a more complete understanding of the 
+learning abilities of young children.
 
 Many of the cognitive skills required for active scientific inquiry follow protracted 
 developmental trajectories. For example, in tasks designed to assess scientific 
@@ -137,16 +129,16 @@ taught to engage in these strategies via direct instruction \cite{Klahr:2004,Kuh
 it is notable how difficult it is for them to discover and implement them on 
 their own. 
 
-%Despite the lengthy developmental trajectory of children's scientific reasoning 
-%skills, the roots of these abilities are observable even in the early preschool years. 
-%For example, in simple causal reasoning tasks, preschool-aged children can 
-%distinguish confounded from unconfounded evidence to draw causal inferences 
-%\cite{Gopnik:2001,Kushnir:2005,Kushnir:2007,Schulz:2004}. Preschool-aged 
-%children also selectively explore confounded evidence in their own exploratory play 
-%\cite{Cook:2011,Gweon:2008,Schulz:2007}. Thus, preschool-aged children show 
-%early emerging abilities to explore evidence strategically, distinguish confounded 
-%from unconfounded evidence, and to engage in causal inference from limited 
-%samples.
+Despite the lengthy developmental trajectory of children's scientific reasoning 
+skills, the roots of these abilities are observable even in the early preschool years. 
+For example, in simple causal reasoning tasks, preschool-aged children can 
+distinguish confounded from unconfounded evidence to draw causal inferences 
+\cite{Gopnik:2001,Kushnir:2005,Kushnir:2007,Schulz:2004}. Preschool-aged 
+children also selectively explore confounded evidence in their own exploratory play 
+\cite{Cook:2011,Gweon:2008,Schulz:2007}. Thus, preschool-aged children show 
+early emerging abilities to explore evidence strategically, distinguish confounded 
+from unconfounded evidence, and to engage in causal inference from limited 
+samples.
 
 One reason for the difficulties children show may be that 
 active inquiry depends on the coordination of a variety of 
@@ -158,19 +150,16 @@ In this sense active inquiry is like a bicycle: when all the elements are proper
 and aligned the bike moves forward.  However, misalignment of any one component can
 be catastrophic.
 
-%
-%For example, according to one popular view , 
-%learners must generate 
-%possible hypotheses to explain their environment.  They then must engage in 
-%decision making to ask questions or more effectively gather additional information.  
-%They then must understand the results of these inquiry behaviors and update their 
-%beliefs accordingly.  The process then repeats with new hypotheses.  The various 
-%stages of this loop closely mirror the process of scientific reasoning engaged by 
-%scientists~\cite{Russell:1993,Klein:2006a,Klein:2006b}. However, a similar set of 
-%inductive processes are at play in many real-world situations (e.g., working an 
-%unfamiliar ATM machine, reading a complex nutrition label).
 
-
+For example, according to one popular view, learners must generate 
+possible hypotheses to explain their environment.  They then must engage in 
+decision making to ask questions or more effectively gather additional information.  
+They then must understand the results of these inquiry behaviors and update their 
+beliefs accordingly.  The process then repeats with new hypotheses.  The various 
+stages of this loop closely mirror the process of scientific reasoning engaged by 
+scientists~\cite{Russell:1993,Klein:2006a,Klein:2006b}. However, a similar set of 
+inductive processes are at play in many real-world situations (e.g., working an 
+unfamiliar ATM machine, reading a complex nutrition label).
 
 %update their beliefs about a set of hypotheses given a set of data, but have trouble 
 %using the remaining hypothesis space to guide future information search. This study 
@@ -232,8 +221,7 @@ tend to find the answer after fewer questions \cite{Mosher:1966}.
 One explanation is that only older children have developed the ability to focus on the 
 high-level features that group the hypotheses, whereas younger children focus on 
 individual stimuli.
-Consistent with this viewpoint, manipulations that help children focus on these higher-level features (such as cuing them with basic
-level category labels instead of exemplar names 
+Consistent with this viewpoint, manipulations that help children focus on these higher-level features (such as cuing them with basic level category labels instead of exemplar names 
 \cite{Ruggeri:2015front} increase the likelihood that young children will generate constraint-seeking questions (see also \citeA{Herwig:1982}.
 Further, although young children are often relatively less likely than older children to ask constraint-seeking questions, even younger children (ages 7-9) are 
 more likely to do so when such questions are particularly informative, such as when the hypothesis space is large and there several equally probable solutions remaining (e.g., Ruggeri \& Lombrozo, 2015; 2015).
@@ -248,11 +236,7 @@ generating an informative query, updating one's representation of the hypothesis
 data produced by the query, and so on. As suggested by prior work, hypothesis scanning questions might 
 be easier for young children to generate because they do not require abstracting informative higher level 
 features (features to query that group classes of hypotheses together and might allow them to be eliminated 
-at once). Yet, another reason why hypothesis scanning questions might be easier for young children is that they 
-produce evidence that is easier for them to process. As a hypothesis scanning question is answered, children 
-are told directly whether the item they queried is correct or not. If instead children ask about a feature (as 
-in a constraint-seeking question), additional cognitive processing is required--children have to take that 
-new information (e.g., that a hidden animal has antennae) and consider each remaining possible 
+at once). Yet, another reason why hypothesis scanning questions might be easier for young children is that they produce evidence that is easier for them to process. As a hypothesis scanning question is answered, children are told directly whether the item they queried is correct or not. If instead children ask about a feature (as in a constraint-seeking question), additional cognitive processing is required--children have to take that new information (e.g., that a hidden animal has antennae) and consider each remaining possible 
 exemplar in light of this information (e.g., check if each one has the antennae) and eliminate from the 
 hypothesis space any that are ruled out by the new information. This process could be cognitively taxing, 
 and also prone to errors. Thus, although constraint seeking questions are often more informative in 
@@ -277,7 +261,6 @@ evidence obtained by their queries.
 %large hypothesis space or when not all solutions were equiprobable.
 
 
-
 %The experimental framework used here is a variant of the ``20 questions'' game, in 
 %which the asker (participant) tries to ascertain what object the answerer 
 %(experimenter) is thinking of (e.g., ``What have I got in my pocket?'') by choosing 
@@ -286,8 +269,6 @@ evidence obtained by their queries.
 %or people \cite{Nelson:2014}, from which the to-be-discovered answer is 
 %randomly selected, and some even provide lists of acceptable questions for askers 
 %to choose from. Investigating children aged 6-11 years, 
-%
-% 
 %
 
 %However, these studies all used hypothesis spaces that were likely familiar to 
@@ -344,20 +325,20 @@ evidence obtained by their queries.
 %from the set any bug which is inconsistent with evidence encountered so far.
 %Our primary dependent measure what the sequence and type of button
 %presses the children made as they learned to identify the bug.}
-\vspace{-.1cm}
+%\vspace{-.1cm}
 \section{Experiment}
-\vspace{-.2cm}
-%The purpose of the experiment is to investigate how children utilize hypothesis-
-%scanning and constraint-seeking questions when trying to discover a hidden feature 
-%in a novel environment, and to ask whether evidence-based belief-updating is a 
-%bottleneck in the knowledge discovery process. To address these issues, we created 
-%a tablet-based game in the ``20-questions'' style (or more specifically, ``Guess 
-%Who?''). Formally, this task involves search of a binary decision tree. To accomplish 
-%this search optimally, one should search for and query the feature at each step that 
-%most nearly bisects the hypothesis space.
+%\vspace{-.2cm}
+The purpose of the experiment is to investigate how children utilize hypothesis-
+scanning and constraint-seeking questions when trying to discover a hidden feature 
+in a novel environment, and to ask whether evidence-based belief-updating is a 
+bottleneck in the knowledge discovery process. To address these issues, we created 
+a tablet-based game in the ``20-questions'' style (or more specifically, ``Guess 
+Who?''). Formally, this task involves search of a binary decision tree. To accomplish 
+this search optimally, one should search for and query the feature at each step that 
+most nearly bisects the hypothesis space.
 
 \subsection{Methods}
-\vspace{-.1cm}
+%\vspace{-.1cm}
 \subsubsection{Participants}
 
 Participants in this experiment were 132 children between the ages of 5 and 10 
@@ -378,7 +359,7 @@ bodies, selected from a pool of 16 unique body shapes.  The bug task was used to
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.22\textwidth]{figures/example_bugs}
+  \includegraphics[width=0.4\textwidth]{figures/example_bugs}
   \caption{Examples of two bug types with all 9 of the binary features present. Each round used one of the 16 
 body shapes. } % Each bug in a round had a unique combination of features.
   \label{fig:example_bugs}
@@ -401,7 +382,7 @@ which visual features are most relevant to ask about first.
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.48\textwidth]{figures/feature_table}
+  \includegraphics[width=0.55\textwidth]{figures/feature_table}
   \caption{The abstract feature structure of the 16 exemplars used in each round. 
 Each participant had these abstract features randomly assigned to the visual 
 features, but had a consistent assignment used round-to-round.}
@@ -446,7 +427,7 @@ mistakes to be made during manual updating--unlike in the automatic condition.
 
 \begin{figure}[!h]
   \centering
-  \includegraphics[width=0.5\textwidth]{figures/task_overview}
+  \includegraphics[width=0.7\textwidth]{figures/task_overview}
   \caption{Task overview: in the upper left, a feature button is used, asking if the bug 
 hidden under the rug is green. Given feedback (``Yes!''), participants in the manual 
 update condition select the bugs that are consistent with this new information (upper 
@@ -456,9 +437,9 @@ and again either choose a feature button or query a single bug.}
   \label{fig:task-overview}
 \end{figure} 
 
-\vspace{-.3cm}
+%\vspace{-.3cm}
 \subsection{Results}
-\vspace{-.1cm}
+%\vspace{-.1cm}
 \subsubsection{Overall}
 
 We analyzed only the first 10 rounds of each game (only 8 children played more than 
@@ -469,33 +450,6 @@ condition was 6, the distributions were significantly different (Kolmogorov-Smir
 0.13$, $p<.01$). For comparison, we simulated 700 rounds of the game with an agent that clicked
 randomly in the task.  This agent took on average 8.9 queries (median: 9) to complete a
 round.  %\hl{why is this overall analysis but the next section also analyzes number of queries per round? GK: it's by query type in future sections..this section is overall (only by cond}
-
-\subsubsection{Response Times}
-
-Participants' median RT for each button type (feature and exemplar) was computed and these data were subjected to a 2-way ANOVA with condition (automatic, manual) as a 
-between-subjects factor and button type as a within-subject factor. There
-were significant main effects of button type (F(1,234) = 90.70, $p<.
-001$) and condition (F(1,234) = 4.05, $p<.05$). On average, participants took longer to make queries in the manual condition (4800 ms) than in the automatic condition (4000 ms). Overall, participants took much longer to 
-make feature queries (7,470 ms) than to press an exemplar button (2,680 ms), 
-perhaps indicating more thought before making more complex queries. There was also a significant 
-interaction effect of button type and condition (F(1,234) = 11.85, $p<.001$). Figure~\ref{fig:basic-rt} shows the mean of subjects' median RTs for each button type, split by condition. Feature queries were 
-slower in the manual-update condition (7900 ms vs. 5430 ms in automatic), which could indicate 1) more careful thought given to features in this condition, and/or 2) general hesitance to use feature 
-queries, perhaps because it is time-consuming (even difficult) to manually update 
-hypotheses. Exemplar queries were faster in the manual-update condition (1850 ms vs. automatic: 2570),
-which could be greater readiness to use the simpler strategy.
-
-\begin{figure}[h]
-  \centering
-  \includegraphics[width=0.33\textwidth]{figures/RT_by_condition_query_type}
-  \caption{Mean of participants' median RT for each condition and query type. 
-Exemplar queries were faster than feature queries, which represent a more complex 
-strategy and thus likely required more thought. Feature queries were slower in the 
-manual-update condition: it seems the difficulty of updating in this condition made 
-participants think even more carefully about using feature queries. Error bars show 
-+/-1SE.}
-  \label{fig:basic-rt}
-\end{figure} 
-%\hl{maybe leave out section from conference paper...or just leave out graph?}
 
 
 \subsubsection{Querying Behavior}
@@ -520,7 +474,7 @@ $p<.05$). Older participants used a greater proportion of feature queries than y
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.45\textwidth]{figures/clicks_by_ageGroup_condition_query_type}
+  \includegraphics[width=0.55\textwidth]{figures/clicks_by_ageGroup_condition_query_type}
   \caption{Mean number of queries of each type per round by age and condition. 
 Error bars show +/-1SE.}
   \label{fig:clicks-per-agecond}
@@ -539,7 +493,35 @@ understanding the quality of children's question asking.
 %  \caption{Proportion of feature vs. item queries by round.}
 %  \label{fig:query-prop-round}
 % \end{figure} 
-  \vspace{.05cm}
+ % \vspace{.05cm}
+  
+ 
+\subsubsection{Response Times}
+
+Participants' median RT for each button type (feature and exemplar) was computed and these data were subjected to a 2-way ANOVA with condition (automatic, manual) as a 
+between-subjects factor and button type as a within-subject factor. There
+were significant main effects of button type (F(1,234) = 90.70, $p<.
+001$) and condition (F(1,234) = 4.05, $p<.05$). On average, participants took longer to make queries in the manual condition (4800 ms) than in the automatic condition (4000 ms). Overall, participants took much longer to 
+make feature queries (7,470 ms) than to press an exemplar button (2,680 ms), 
+perhaps indicating more thought before making more complex queries. There was also a significant 
+interaction effect of button type and condition (F(1,234) = 11.85, $p<.001$). Figure~\ref{fig:basic-rt} shows the mean of subjects' median RTs for each button type, split by condition. Feature queries were 
+slower in the manual-update condition (7900 ms vs. 5430 ms in automatic), which could indicate 1) more careful thought given to features in this condition, and/or 2) general hesitance to use feature 
+queries, perhaps because it is time-consuming (even difficult) to manually update 
+hypotheses. Exemplar queries were faster in the manual-update condition (1850 ms vs. automatic: 2570),
+which could be greater readiness to use the simpler strategy.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.55\textwidth]{figures/RT_by_condition_query_type}
+  \caption{Mean of participants' median RT for each condition and query type. 
+Exemplar queries were faster than feature queries, which represent a more complex 
+strategy and thus likely required more thought. Feature queries were slower in the 
+manual-update condition: it seems the difficulty of updating in this condition made 
+participants think even more carefully about using feature queries. Error bars show 
++/-1SE.}
+  \label{fig:basic-rt}
+\end{figure} 
+
   
 
 \subsubsection{Manual Update Mistakes}
@@ -642,7 +624,7 @@ participants.
 
 \begin{figure}[t]
   \centering
-  \includegraphics[width=0.38\textwidth]{figures/EIG_by_ageGroup_n_condition}
+  \includegraphics[width=0.55\textwidth]{figures/EIG_by_ageGroup_n_condition}
   \caption{Mean expected information gain for feature queries by age group and condition, 
 with simulated subjects making random feature queries for comparison. Manual-
 update subjects had higher EIG than automatic-update subjects, and both were 
@@ -684,9 +666,9 @@ better than random--but suboptimal (1). Older children had higher EIG than young
 %  \vspace{-.1cm}
 %\end{figure} 
 
-\vspace{-.2cm}
+%\vspace{-.2cm}
 \section{General Discussion}
-\vspace{-.1cm}
+%\vspace{-.1cm}
 The present study asked children 5-10 years of age to learn feature distributions in an unfamiliar hypothesis space, and examined both their qualitative questioning strategies, and how efficiently they were able to search that space. Importantly, we manipulated the support children were 
 given while updating the hypothesis space: after a feature query, participants in the 
 automatic update condition were shown which bugs were eliminated at the press of 
@@ -704,16 +686,16 @@ In summary, this study provides evidence that hypothesis updating is a difficult
 
 
 
-\vspace{-.3cm}
+%\vspace{-.3cm}
 \section{Acknowledgments}
-\vspace{-.2cm}
+%\vspace{-.2cm}
 This work was supported by the John Templeton Foundation ``Varieties of 
 Understanding" grant to TMG and MR.
 \vspace{-.2cm}
 \bibliographystyle{apacite}
 
-\setlength{\bibleftmargin}{.125in}
-\setlength{\bibindent}{-\bibleftmargin}
+%\setlength{\bibleftmargin}{.125in}
+%\setlength{\bibindent}{-\bibleftmargin}
 
 \bibliography{sensemaking_refs}
 
