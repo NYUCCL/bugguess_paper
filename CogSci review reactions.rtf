@@ -1,0 +1,42 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf460
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Response to CogSci Conf reviewers on bug guess:\
+\
+Reviewer 1:\
+\'93Automatic kids use more feature queries, but later feature queries may be less informative than earlier ones\'85so this may account for the difference in feature query EIG\'94\
+\
+Yes, but that\'92s the point: the traditional way of looking at 20 questions behavior \'97 number/proportion of feature queries \'97 makes the automatic condition look better, but if they don\'92t pay attention to the features on the remaining hypotheses, they may select queries with lower EIG.\
+\
+\'93Is there a negative correlation between EIG and the order of queries (1st, 2nd)? Does the condition difference in EIG remain when the number of queries are equated - for example by looking at only the first two feature queries?\'94\
+\
+An ANOVA on only the first two feature queries per round shows the same pattern of results:\
+\
+\'93Response time analyses does not include age group while the rest do \'85 is the longer RT in the manual condition for the feature button driven by the younger age group?\'94\
+\
+I added age group into the RT ANOVA (I originally had it, but believe I cut it due to space constraints): no main effect of age or interaction with other factors. \
+\
+\'93expect an interaction of # of constraint-seeking questions with condition and age: younger children, with more limited cognitive resources, may shift more towards constraint-seeking questions than older kids\'94\
+\
+\'85I guess we don\'92t find this, but I acknowledge that the discussion could reflect more on the original hypotheses and the findings, and show how this moves the theory forward \'97 in the journal version!\
+\
+Reviewer 2:\
+\'93counterintuitively -- the error-prone task is getting better EIG scores.\
+\'a0 \'a0Are the authors certain that this isn't simply an artifact of the fact\
+\'a0 \'a0that they calculate EIG for a given question and hypothesis space, but\
+\'a0 \'a0then that hypothesis space is not eliminated correctly? That is, mistakes\
+\'a0 \'a0of omission mean the hypothesis space post-question can be 'bigger than\
+\'a0 \'a0it should be'. If this is not correctly accounted for, it can lead to\
+\'a0 \'a0'extra information' as an artifact. For a concrete example, consider a\
+\'a0 \'a0learner that plays in way A and scores a mean score of MEAN_EIG_A, and\
+\'a0 \'a0learner B who plays just like player A except in the last move, she fails\
+\'a0 \'a0to eliminate the last of two remaining hypotheses. Now she gets an extra\
+\'a0 \'a0turn, and again asks a question that can distinguish between these two\
+\'a0 \'a0hypotheses. Learner B will get MEAN_EIG_B>=MEAN_EIG_A.\'94\
+\
+EIG is calculated based on how much the hypothesis space *should* be reduced based on a query, not on how much the (say, error-prone manual kids) actually reduce the hypothesis space. However, it is true that manual kids may have larger hypothesis spaces for longer (although they also sometimes over-eliminate), and this may give them a higher probability of making higher-EIG queries throughout the round (although an optimal querier and updater would have higher EIG than any kid we observed). The particular scenario the reviewer came up with *could* happen, but is one of many possible situations. It should comfort us that conducting the same EIG analysis on only the first two feature queries of each round yields the same results: manual EIG > automatic EIG (and older kids have higher EIG).\
+\
+The other way to address the concerns about manual mistakes causing the EIG advantage is to include a new or altered simulation that makes mistakes at a similar rate to manual participants (and perhaps with a similar overall preference for feature queries). I\'92ve run these simulations and they don\'92t much improve the EIG: they are still far below manual (and even automatic) participants. Although I think these simulations should definitely be included in the journal version, I\'92m really not sure they can be adequately explained for inclusion in this version\'85I\'92ve already exhausted most of my tricks for squeezing in more text, so unless there is someplace we can cut from (reviewers also requested additional discussion..), I\'92m not sure how much more we can do.}
