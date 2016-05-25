@@ -30,6 +30,7 @@
 \maketitle
 
 \begin{abstract}
+
 This study explores developmental changes in the ability to ask 
 informative questions.  We hypothesized an intrinsic link between the ability to 
 update beliefs in light of evidence and the ability to ask informative questions. 
@@ -53,7 +54,6 @@ reasoning
 
 \section{Introduction} 
 
-
 %Figuring out how to efficiently navigate a hypothesis space--
 %from learning the diagnostic features to asking the appropriate questions to 
 %appropriately updating the space in the face of new evidence--is an essential part of 
@@ -75,9 +75,8 @@ science and children's museums. Indeed, a central goal of these environments is 
 provide children with hands-on opportunities to learn from their own explorations, to 
 enable them to gain active experience with the steps of scientific investigation, to 
 discover new knowledge, and to develop enthusiasm for and interest in science 
-\cite{Bell:2009,Fenichel:2010}. As a result, we believe that informal science 
-environments provide an excellent domain in which to explore the psychological 
-processes related to the development of understanding.
+\cite{Bell:2009,Fenichel:2010}. As a result, informal science 
+environments may provide an excellent domain in which to investigate the development of understanding.
 
 % only keep all the sensemaking framing in the journal paper?? JOURNAL
 Informal science learning rests on the cognitive capacity for ``sensemaking'' 
@@ -609,8 +608,6 @@ better than random--but suboptimal (1). Older children had higher EIG than young
   \label{fig:EIG_by_age}
 \end{figure} 
 
-%\hl{include EIG as covariate for predicting round duration? (number of clicks to solution)}
-
 \subsubsection{Click-by-click behavior}
 %Individual strategies: mostly exemplar vs. feature queries? Do they use consistent 
 %feature buttons across rounds?
@@ -618,6 +615,8 @@ better than random--but suboptimal (1). Older children had higher EIG than young
 Do participants start a round by making a feature query? After how many feature 
 queries do they switch to making exemplar queries? Figure~\ref{fig:query-prop-click} shows the mean proportion of feature vs. exemplar queries by click index within a round for each update condition and for the simulated random player, split by age group. Older children show a much higher proportion of feature queries in the first three clicks of the automatic condition, and the first two of the manual condition. In both update conditions, the first three clicks are more likely to be feature than exemplar queries, and automatic-update subjects often make a fourth feature query before likely moving to exemplar queries. Both human 
 conditions are quite different than the simulated random subjects. Rather, the response profile of human participants looks generally like the optimal sequence: 3 feature queries and then one (sometimes two) exemplar queries. However, as was shown earlier, participants rarely chose the most informative feature to query at any given time, and manual participants made a number of updating errors. 
+
+In terms of query quality, Figure~\ref{fig:EIG_by_click}, which shows mean EIG of feature queries by click index (ignoring exemplar clicks), reveals that people in the two update conditions had similarly informative first queries--and better than the simulation's, but that the manual-updaters' subsequent few feature queries were more informative. That is to say, manual-update participants chose feature queries that were more contextually appropriate for the particular set of remaining hypotheses, in contrast to automatic-update participants who--despite finding an informative feature for the first query--paid less attention to the unfolding situation. In fact, after the initial high-quality query, the automatic-update participants chose queries with nearly the same EIG as the random simulation, implying that they more or less chose ignored the features of the remaining hypotheses and simply chose at random.
 %Feature queries are made at a rate that is correlated with the number of exemplars 
 %they are relevant to ($r=.79$, $t(8)=3.6$, $p<.01$). 
 % ...maybe simulate based on the human choice probabilities, and compare EIG?}
@@ -635,18 +634,16 @@ exemplar queries. Older children make a higher proportion of feature queries in 
   \vspace{-.1cm}
 \end{figure} 
 
-% \begin{figure}[!h]
-% \centering
-%  \includegraphics[width=0.55\textwidth]{figures/info_gain_by_click} % info_gain_prop_by_click
-%  \caption{The mean expected information gain (EIG) of feature queries by click index by condition. Although %the first feature query--made when the full hypothesis space is possible--had nearly the same mean EIG in %both conditions, the next few feature queries in the manual-update condition had higher mean EIG than the %automatic condition. This suggests that manual-update subjects paid more attention to the remaining %hypotheses after the first query, and made subsequent feature queries that were sensitive to the current %context. After click five, feature queries had similar EIG in both conditions, but were generally uncommon as 
-% participants switched to exemplar queries.  Bars show +/-1SE.}
-%  \label{fig:EIG_by_click}
-% \end{figure} 
+ \begin{figure}[!h]
+ \centering
+  \includegraphics[width=0.55\textwidth]{figures/info_gain_by_click_w_sim_w_N} % info_gain_prop_by_click
+  \caption{Subjects' mean expected information gain (EIG) of feature queries by click index (ignoring all exemplar clicks) by condition, with symbol size indicating frequency of occurrence. Although the first feature query--made when the full hypothesis space is possible--had nearly the same mean EIG in both conditions, the next few feature queries in the manual-update condition had higher mean EIG than the automatic condition. This suggests that manual-update subjects paid more attention to the remaining hypotheses after the first query, and made subsequent feature queries that were sensitive to the current context. Making four or more feature queries in a given round was quite rare, as most participants mostly switched to exemplar queries after the second or third feature query. Bars show +/-1SE.}
+  \label{fig:EIG_by_click}
+ \end{figure} 
 
 
-%\vspace{-.2cm}
 \section{General Discussion}
-%\vspace{-.1cm}
+
 The present study asked children 5-10 years of age to learn feature distributions in an unfamiliar hypothesis space, and examined both their qualitative questioning strategies, and how efficiently they were able to search that space. Importantly, we manipulated the support children were 
 given while updating the hypothesis space: after a feature query, participants in the 
 automatic update condition were shown which bugs were eliminated at the press of 
@@ -658,18 +655,15 @@ In line with previous research \cite{Mosher:1966,Ruggeri:2014}, older children (
 However, in terms of expected information gain, a context-sensitive measure of how well a chosen feature bisects the remaining hypothesis space, it turned out that children in the 
 automatic-update condition made less informative feature queries. We 
 suggest that the greater mental effort required by manual updating actually lead 
-to more careful consideration of which feature query to use, and ultimately a better choice. Indeed, response times for feature queries were slower under manual updating, indicating that greater thought went into making those choices. In both conditions, older children made more informative feature queries, but even 5-7 year-olds asked far more informative questions than a random simulation, showing some efficiency in navigating an unfamiliar domain even after only a few minutes of experience. 
+to more careful consideration of which feature query to use, and ultimately a better choice. Indeed, response times for feature queries were slower under manual updating, indicating that greater thought went into making those choices, corroborated by the fact that slower feature query RTs were correlated with more informative queries. Within-round analysis found that automatic-update participants were likely to make feature queries for the first few clicks, while manual-updaters switched often switched to exemplar queries after one (5-7 year-olds) or two feature queries (8-10 year-olds). In terms of quality, feature queries in both update conditions were similar for the first query in a round--and better than the simulation. However, manual-update subjects made more contextually-sensitive feature queries after the first query, whereas automatic-update participants looked much like they were choosing random feature queries, without regard for the current hypothesis space's features. In both conditions, older children made more informative feature queries, but even 5-7 year-olds asked far more informative questions than a random simulation, showing some efficiency in navigating an unfamiliar domain even after only a few minutes of experience. 
 
 In summary, this study provides evidence that hypothesis updating is a difficult, error-prone step in the active inquiry process. Moreover, children are sensitive to the difficulty of this step: if aided in hypothesis updating, they will ask more constraint-seeking questions than if they must manually update the space. However, we also uncovered evidence of a desirable difficulty in this step, for manual updating resulted in more informative, contextually-sensitive constraint-seeking questions than the supported update process. Future work will aim to reduce errors in hypothesis updating and discover other bottlenecks--or desirable difficulties--in active inquiry.
 
-
-
-%\vspace{-.3cm}
 \section{Acknowledgments}
-%\vspace{-.2cm}
-This work was supported by the John Templeton Foundation ``Varieties of 
-Understanding" grant to TMG and MR.
-\vspace{-.2cm}
+
+This work was supported by the John Templeton Foundation 
+``Varieties of Understanding" grant to TMG and MR.
+
 \bibliographystyle{apacite}
 
 %\setlength{\bibleftmargin}{.125in}
