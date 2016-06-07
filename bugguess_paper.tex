@@ -194,7 +194,7 @@ high-level features that group the hypotheses, whereas younger children focus on
 Consistent with this viewpoint, manipulations that help children focus on these higher-level features (such as cuing them with basic level category labels instead of exemplar names 
 \cite{Ruggeri:2015front} increase the likelihood that young children will generate constraint-seeking questions (see also Herwig, 1982).
 Further, although young children are often relatively less likely than older children to ask constraint-seeking questions, even younger children (ages 7-9) are 
-more likely to do so when such questions are particularly informative, such as when the hypothesis space is large and there are several equally probable solutions remaining \cite{Ruggeri:2014,Ruggeri:2015}
+more likely to do so when such questions are particularly informative, such as when the hypothesis space is large and there are several equally probable solutions remaining \cite{Ruggeri:2014,Ruggeri:2015}.
 \nocite{Herwig:1982}
 % (e.g., Ruggeri \& Lombrozo, 2015; 2015).
 
@@ -216,8 +216,8 @@ The behavioral distinction between constraint-seeking and hypothesis-scanning qu
 %we look at developmental changes.}
 Whereas previous work has focused on developmental changes in when children generate informative, 
 hypothesis-scanning questions, less prior work has considered possible developmental changes in how 
-children make use of the new evidence that their questions reveal. As described above, effective active 
-inquiry involves the coordination of multiple cognitive processes--representing the hypothesis space, 
+children make use of the new evidence that their questions reveal \hl{describe more?}. % how was it done in prior work?
+As described above, effective active inquiry involves the coordination of multiple cognitive processes--representing the hypothesis space, 
 generating an informative query, updating one's representation of the hypothesis space in light of the 
 data produced by the query, and so on. As suggested by prior work, hypothesis-scanning questions might 
 be easier for young children to generate because they do not require abstracting informative higher level 
@@ -560,10 +560,10 @@ current situation.} were computed, and their mean EIG was
 subjected to an ANOVA with condition and age group (5-7 vs. 8-10) as between-subjects factors. 
 This ANOVA indicated significant main effects of condition (F(1,115) = 55.0, $p<.001$) 
 and age group (F(1,115) = 12.42, $p<.001$), with no significant interaction effect (F(1,115) = 0.2, $p>.05$).\footnote{The same significant effects and similar mean EIG values were obtained when analyzing only the first two feature queries per round, when manual- and automatic-update participants were on more equal footing (i.e., before further manual errors--which could raise or lower the EIG of the remaining feature queries).}
-Figure~\ref{fig:EIG_by_age} shows mean EIG per feature query by age group and condition. Mean 
-EIG of feature queries for each subject was marginally significantly correlated with 
-age ($t(116)=1.77$, $p=.08$, $r=.16$), showing that older children tended to use 
-more relevant feature queries. The feature queries made by participants in the 
+Figure~\ref{fig:EIG_by_age} shows mean EIG per feature query by age group and condition, along with a simulation based on the subjects' data, but showing the mean EIG of all the feature queries (i.e., as if subjects had chosen randomly). Note that randomly-chosen features for the manual-update subjects have a higher EIG than for automatic-update subjects (perhaps driven by update errors quickly reducing the hypothesis space--although the reverse could happen, too), the simulated random EIGs are far below the corresponding human data.
+Mean EIG of feature queries for each subject was marginally significantly correlated with 
+age ($t(116)=1.77$, $p=.08$, $r=.16$), showing that older children tended to use more relevant feature queries. 
+The feature queries made by participants in the 
 automatic condition had significantly lower EIG than those made in the manual 
 condition ($M_{auto} = .60$, $M_{man} = .74$, $t(116) = 5.49$,  $p<.001$). Thus, 
 although manual-update participants used fewer feature queries overall, and tended 
@@ -577,23 +577,22 @@ participants. Indeed, there was a weak but significant correlation of participan
   \centering
   \includegraphics[width=0.55\textwidth]{figures/EIG_by_ageGroup_n_condition_with_random_sims}
   \caption{Mean expected information gain for feature queries by age group and condition, 
-with simulated subjects making random feature queries for comparison. Manual-
-update subjects had higher EIG than automatic-update subjects, and both were 
-better than random--but suboptimal (1). Older children had higher EIG than younger children. Bars show +/-1SE.}
+with a simulation making random feature queries--in the same situations as subjects (not the earlier random agents)--for comparison. Manual-update subjects had higher EIG than automatic-update subjects, and both were better than random--but suboptimal (1). Older children had higher EIG than younger children. Bars show +/-1SE.}
   \label{fig:EIG_by_age}
 \end{figure} 
 
 \subsubsection{Click-by-click behavior}
-%Individual strategies: mostly exemplar vs. feature queries? Do they use consistent feature buttons across rounds?
+%Individual strategies: mostly exemplar vs. feature queries? 
 
 Do participants start a round by making a feature query? After how many feature 
-queries do they switch to making exemplar queries? Figure~\ref{fig:query-prop-click} shows the mean proportion of feature vs. exemplar queries by click index within a round for each update condition and for the simulated random player, split by age group. Older children show a much higher proportion of feature queries in the first three clicks of the automatic condition, and the first two of the manual condition. In both update conditions, the first three clicks are more likely to be feature than exemplar queries, and automatic-update subjects often make a fourth feature query before likely moving to exemplar queries. Both human 
-conditions are quite different than the simulated random subjects. Rather, the response profile of human participants looks generally like the optimal sequence: 3 feature queries and then one (sometimes two) exemplar queries. However, as was shown earlier, participants rarely chose the most informative feature to query at any given time, and manual participants made a number of updating errors. 
+queries do they switch to making exemplar queries? Figure~\ref{fig:query-prop-click} shows the mean proportion of feature vs. exemplar queries by click index within a round for each update condition split by age group, contrasted with simulated agents choosing any available buttons uniformly at random throughout the game. Older children show a much higher proportion of feature queries in the first three clicks of the automatic condition, and the first two of the manual condition. In both update conditions, the first three clicks are more likely to be feature than exemplar queries, and automatic-update subjects often make a fourth feature query before likely moving to exemplar queries. 
+Both human conditions are quite different than the simulated random agent. 
+Rather, the response profile of human participants looks generally like the optimal sequence: 3 feature queries and then one (sometimes two) exemplar queries. However, as was shown earlier, participants rarely chose the most informative feature to query at any given time, and manual participants made a number of updating errors. Where does the higher EIG for manual-update feature queries come from? Are they choosing the best feature query from the start, or are they simply better at testing more contextually-relevant features later in the round?
 
-In terms of query quality, Figure~\ref{fig:EIG_by_click}, which shows mean EIG of feature queries by click index (ignoring exemplar clicks), reveals that people in the two update conditions had similarly informative first queries--and better than the simulation's, but that the manual-updaters' subsequent few feature queries were more informative. That is to say, manual-update participants chose feature queries that were more contextually appropriate for the particular set of remaining hypotheses, in contrast to automatic-update participants who--despite finding an informative feature for the first query--paid less attention to the unfolding situation. In fact, after the initial high-quality query, the automatic-update participants chose queries with nearly the same EIG as the random simulation, implying that they more or less chose ignored the features of the remaining hypotheses and simply chose at random.
+Figure~\ref{fig:EIG_by_click} shows mean EIG of feature queries by click index (ignoring exemplar clicks), with a simulation based on the participants' data for comparison: although following the same sequence of situations as participants, this simulation shows the EIG if a feature query had been chosen at random in each instance. 
+Figure~\ref{fig:EIG_by_click} reveals that people in the two update conditions had similarly informative first queries--especially for the 5-7 year-olds, who were not much better than random, but that manual subjects' subsequent few feature queries were more informative than automatic subjects' or the random choices. That is to say, manual-update participants chose feature queries that were more contextually appropriate for the particular set of remaining hypotheses, in contrast to automatic-update participants who--despite finding an informative feature for the first query--paid less attention to the unfolding situation. In fact, after the initial high-quality query, the younger automatic-update participants chose queries with nearly the same EIG as the random simulation, implying that they more or less ignored the features of the remaining hypotheses. For older automatic-update participants, feature query EIG was better than random after the first query, although it remained below manual-update EIG across feature queries.
 %Feature queries are made at a rate that is correlated with the number of exemplars 
 %they are relevant to ($r=.79$, $t(8)=3.6$, $p<.01$). 
-% ...maybe simulate based on the human choice probabilities, and compare EIG?}
 
 \begin{figure}[!h]
   \centering
@@ -630,17 +629,17 @@ automatic-update condition made less informative feature queries. We
 suggest that the greater mental effort required by manual updating actually lead 
 to more careful consideration of which feature query to use, and ultimately a better choice. Indeed, response times for feature queries were slower under manual updating, indicating that greater thought went into making those choices, corroborated by the fact that slower feature query RTs were correlated with more informative queries. Within-round analysis found that automatic-update participants were likely to make feature queries for the first few clicks, while manual-updaters switched often switched to exemplar queries after one (5-7 year-olds) or two feature queries (8-10 year-olds). In terms of quality, feature queries in both update conditions were similar for the first query in a round--and better than the simulation. However, manual-update subjects made more contextually-sensitive feature queries after the first query, whereas automatic-update participants looked much like they were choosing random feature queries, without regard for the current hypothesis space's features. In both conditions, older children made more informative feature queries, but even 5-7 year-olds asked far more informative questions than a random simulation, showing some efficiency in navigating an unfamiliar domain even after only a few minutes of experience. 
 
-In summary, this study provides evidence that hypothesis updating is a difficult, error-prone step in the active inquiry process. Moreover, children are sensitive to the difficulty of this step: if aided in hypothesis updating, they will ask more constraint-seeking questions than if they must manually update the space. However, we also uncovered evidence of a desirable difficulty in this step, for manual updating resulted in more informative, contextually-sensitive constraint-seeking questions than the supported update process. Future work will aim to reduce errors in hypothesis updating and discover other bottlenecks--or desirable difficulties--in active inquiry.
+In summary, this study provides evidence that hypothesis updating is a difficult, error-prone step in the active inquiry process. Moreover, children are sensitive to the difficulty of this step: if aided in hypothesis updating, they will ask more constraint-seeking questions than if they must manually update the space. However, we also uncovered evidence of a desirable difficulty in this step: manual updating resulted in more informative, contextually-sensitive constraint-seeking questions than the supported update process. Future work will aim to reduce errors in manual hypothesis updating and discover other bottlenecks--or desirable difficulties--in active inquiry. 
 
-% future work...muesums?
-% Children's developing abilities to engage in these basic steps of scientific 
-% thinking are on full display in informal science learning environments, such as at 
-%science and children's museums. Indeed, a central goal of these environments is to 
-%provide children with hands-on opportunities to learn from their own explorations, to 
-%enable them to gain active experience with the steps of scientific investigation, to 
-%discover new knowledge, and to develop enthusiasm for and interest in science 
-%\cite{Bell:2009,Fenichel:2010}. As a result, informal science 
-%environments may provide an excellent domain in which to investigate the development of understanding.
+Finally, it is worth noting that this partially self-guided iPad study was conducted in the relaxed learning environment of the American Museum of Natural History's Discovery Room. 
+Children's developing abilities to engage in the basic steps of scientific 
+ thinking are on full display in such informal science learning environments, such as at 
+science and children's museums. Indeed, a central goal of these environments is to 
+provide children with hands-on opportunities to learn from their own explorations, to 
+enable them to gain active experience with the steps of scientific investigation, to 
+discover new knowledge, and to develop enthusiasm for and interest in science 
+\cite{Bell:2009,Fenichel:2010}. As a result, informal science 
+environments may provide an excellent domain in which to investigate the development of understanding. This study demonstrates that such environs can be suitable and fruitful venues for knowledge discovery not only for children, but for scientists, too.
 
 \section{Acknowledgments}
 
