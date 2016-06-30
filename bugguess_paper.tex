@@ -9,7 +9,7 @@
 \usepackage{amsmath}
 \usepackage[american]{babel}
 \usepackage[section]{placeins}
-
+\usepackage{subcaption}
 \usepackage{soul} % for \hl
 \usepackage{color}
 %\renewcommand\bibliographytypesize{\footnotesize}
@@ -30,7 +30,7 @@
 This study explores developmental changes in the ability to ask 
 informative questions, hypothesizing a link between the ability to 
 update beliefs in light of evidence and the ability to ask informative questions. 
-Four- to ten-year-old \hl{the methods say 5 to 10 yo} children 
+Five- to ten-year-old children 
 played an iPad game asking them to identify a hidden insect. Learners could either 
 ask about individual insects, or make a series of feature queries (e.g., ``Does the 
 hidden insect have antenna?'') that could more efficiently narrow the hypothesis 
@@ -182,7 +182,7 @@ Understanding the integrated nature of these cognitive processes is important
 not just for our scientific understanding of the development of the human mind,
 but also because of broader educational implications.  For example, many educational philosophies
 emphasize relatively unstructured, self-guided learning environments~\cite{Bruner:1961vn,Kolb:1984mi,Steffe:1995qf}.  
-However, understanding limitations in children's active inqury abilities and how each component of such abilities evolves
+However, understanding limitations in children's active inquiry abilities and how each component of such abilities evolves
 across age can be used to design more effective learning environments for children of various ages.
 For example, evidence that younger children benefit from assistance in updating their beliefs in response to new evidence
 would suggest that learning environments for younger children need to provide support for this component of their learning.
@@ -195,7 +195,7 @@ would suggest that learning environments for younger children need to provide su
 The present study attempts to decompose the 
 component processes involved in active inquiry, specifically focusing on the role of 
 belief updating.
-We tasked four to ten-year old children \hl{the methods say 5 to 10 yo} to identify a hidden insect in
+We tasked five- to ten-year old children to identify a hidden insect in
 a simple iPad variant of the classic ``Guess Who?" game. 
 Children sequentially asked questions to try to identify the hidden target and received truthful answers.
 Based on prior work reviewed below~\cite<e.g.,>{Mosher:1966}, we expected younger children to have difficulty formulating informative queries
@@ -208,8 +208,8 @@ that helping children to update their beliefs accurately following the receipt o
 cognitive resources and lead to higher quality question-asking. 
 Interestingly, our results opposed this initial hypothesis in that elements which 
 ostensibly made our task more difficult actually improved the quality of children's inquiry behavior and
-suggests an important refinement to the information processing model summarized in Figure~\ref{fig:sensemaking_loop}.
-\hl{i'm not sure about this last phrase... but i want to suggest some implication of our finding}
+suggests an important nuance of the information processing model summarized in Figure~\ref{fig:sensemaking_loop}.
+%(was ``important refinement'') ..want to suggest some implication of our finding
 
 %One broader implication of this work is to understand the types of assistive elements which
 %support children's reasoning skills, particularly in a museum science setting.
@@ -249,12 +249,22 @@ the right types of category information, in mind seems to drive more effective i
 \nocite{Herwig:1982}
 % (e.g., Ruggeri \& Lombrozo, 2015; 2015).
 
-\hl{Maybe we can say a little more about EIG here. the context-sensitive analysis of question quality is
-really important.  I think we want to prime the reader for "moving beyond" analyses of constraint vs. scanning
-and focus on context sensitive information measures.  Keep this comment in mind when approaching
-the rest of the paper because there might be a few places to make adjustments in the way we discuss
-things.  for example some of the longer text on EIG of the next subsection might be more appropriate here
-if we discuss context-sensitivty}
+The behavioral distinction between constraint-seeking and hypothesis-scanning questions can also be studied 
+from the normative perspective of information gain, mathematically defined below. 
+Intuitively, the most informative question is one that will eliminate half of the remaining hypotheses. 
+A question with low expected information gain (EIG) would concern a feature of only one item (e.g., a hypothesis-scanning question) in a large hypothesis space: there is a high probability of eliminating only that single hypothesis (barely reducing the space)--although there is a small chance of eliminating all others. 
+However, it is important to note the context-sensitivity of EIG: as it is calculated with respect to the remaining hypothesis space, the relative value of constraint-seeking questions may vary, depending on 1) the presence of features that nearly bisect the space, and 2) the number of hypotheses remaining. In the extreme, with only two hypotheses remaining, there is no informational difference in making a maximally informative constraint-seeking question or simply scanning one of the hypotheses. 
+EIG has often been proposed as a model of how children might evaluate the quality of possible queries.  
+For example, \citeA{Nelson:2014} found that 8-10 year-old children can search a familiar structured domain 
+(people with varying gender, hair color, etc.) fairly efficiently, tending to ask about frequent real-world features 
+that roughly bisected the search space (e.g., gender first). 
+ Likewise, \citeA{RuggeriXu:2015} found evidence that children's patterns of search decisions were well-explained in terms of EIG.
+%\hl{Maybe we can say a little more about EIG here. the context-sensitive analysis of question quality is really important.  
+%I think we want to prime the reader for "moving beyond" analyses of constraint vs. scanning
+%and focus on context sensitive information measures.  Keep this comment in mind when approaching
+%the rest of the paper because there might be a few places to make adjustments in the way we discuss
+%things.  for example some of the longer text on EIG of the next subsection might be more appropriate here
+%if we discuss context-sensitivity}
 
  %\citeA{Ruggeri:2015} studied 7-8 year-olds, 9-11 year-olds, and 17-18 year-olds 
 %asking questions to identify the cause of an event in real-world scenarios (e.g., Why 
@@ -265,16 +275,13 @@ if we discuss context-sensitivty}
 \subsection{Belief updating and active inquiry}
 
 While it is clear there are developmental changes in how children formulate questions, less work has considered 
-developmental changes in how children make use of the new evidence that their questions reveal~\cite<but see>{Denison:2013kk}.  However,
-there are many reasons to think that these two behaviors might be deeply intwined.
+developmental changes in how children make use of the new evidence that their questions reveal~\cite<but see>{Denison:2013kk}.  
+However, there are many reasons to think that these two behaviors might be deeply intwined.
 The active inquiry loop in Figure~\ref{fig:sensemaking_loop} suggests one obvious interaction because if
 questions or information gathering actions are made on the basis of current beliefs, and those beliefs
 are wrong, then inquiry will be less effective~\cite<c.f., research on the hot stove effect,>{Denrell:2001mw,Rich:2015qo}.  
-%There are certainly
-%many examples where scientific progress
-%has been derailed by incorrect interpretation of evidence.
+%There are certainly many examples where scientific progress has been derailed by incorrect interpretation of evidence.
 %\nocite{Needham:1745ff}
-
 
 
 \nocite{Coenen:2015nr}
@@ -295,10 +302,9 @@ updating is fundamental to judging the information quality of a possible query: 
 beliefs would change given different answers that a question derives meaning and value.
 On the basis of this observation, Coenen \& Gureckis (2015) reported a study aiming to relate individual
 differences in belief updating during a causal reasoning task to patterns of information seeking behaviors.  
-Subjects show showed clear evidence of biased belief updating (e.g., incorrectly interpretting ambiguous 
-evidence as unambiguous) also showed biased patterns of information gathering in a causal intervention 
-learning task.  This study highlights the strongly interactive nature of belief-updating and information seeking
-behaviors.
+Subjects show showed clear evidence of biased belief updating (e.g., incorrectly interpreting ambiguous 
+evidence as unambiguous) also showed biased patterns of information gathering in a causal intervention learning task.  
+This study highlights the strongly interactive nature of belief-updating and information seeking behaviors.
 
 Interestingly, past work on the development of question asking abilities in children has tended not 
 to emphasize belief updating as a dependent measure, or precluded studying updating beliefs by the design of
@@ -306,39 +312,21 @@ the study.  For example,
 \citeA{Herwig:1982} presented children with a series of two-alternative forced choice decisions between 
 hypothesis-scanning or constraint-seeking question but did not actually give feedback (and therefore
 the ability to detect errors in belief updating).
-\hl{The other references here were dropped because the summary was seemingly unclear.  See Latex
-beneath here for my comments}
-%In the 20-questions task in which 8- to 10-year-olds were to identify which of 18 people was the hidden target, 
-%and played the game to completion several times for different targets, children were allowed to eliminate 
-%hypotheses based on acquired evidence, but were given help by the experimenter if needed, and were thus 
-%presumably not allowed to make errors. 
-%%% TODD SAYS, no reference for above study.  "presumably not allowed to make errors" sounds weird
-%%% if it was unclear from the procedure can we attack whoever this is for this?  I think not but it is sloppy on their part.
-%%% otherwise just say they weren't allowed to make errors. 
-
- %\citeA{Ruggeri:2014} did not explicitly represent the hypothesis space 
-%in Experiment 1's causal reasoning task (e.g., ``Why was a man late to work yesterday?''), and when ten 
-%explicit reasons for being late were given in Experiment 2, they remained in view.  That is to say, the process 
-%of hypothesis updating was not scrutinized in these prior studies.
-%%% TODD SAYS, the ruggeri think emphasizes that "they" didn't explicitly represent the hypothesis
-%%% space?  who?  the experimenter or the kids?  this needs more precision maybe. otherwise drop it.
-
-%The behavioral distinction between constraint-seeking and hypothesis-scanning questions can also be studied 
-%from the normative perspective of information gain. In general, the most informative question is one that will 
-%eliminate half of the remaining hypotheses.  Expected information gain (EIG) has often been proposed as a 
-%model of how children might evaluate the quality of possible queries.  For example, \citeA{Nelson:2014} found that 
-%8-10 year-old children can search a familiar structured domain (people with varying gender, hair color, etc.) fairly 
-%efficiently, tending to ask about frequent real-world features that roughly bisected the search space. 
-% Likewise, \citeA{RuggeriXu:2015} found evidence that children's patterns of search decisions were well-explained 
-% in terms of EIG.
-
+In the 20-questions task of \citeA{Nelson:2014}, 8- to 10-year-olds were asked to identify which of 18 people was the hidden target, and played the game to completion several times for different targets. Children eliminated
+hypotheses (flipping over cards) based on acquired evidence, but were given help by the experimenter if needed, which presumably means they were not allowed to make errors. 
+%%% TODD: sounds weird if it was unclear from the procedure can we attack whoever this is for this?  
+%%%I think not but it is sloppy on their part. otherwise just say they weren't allowed to make errors. 
+% G: quote from Nelson:2014: 
+% "The face cards eliminated through a question were turned over by the child, if needed with help from the experimenter." 
+% I assume 'if needed' means if they made a mistake, thus 'presumably' seemed appropriate
+ In \citeA{Ruggeri:2014}, the experimenters did not explicitly represent the hypothesis space for participants
+in Experiment 1's causal reasoning task (e.g., ``Why was a man late to work yesterday?''), and when ten 
+explicit reasons for being late were given in Experiment 2, they remained in view.  That is to say, the process 
+of hypothesis updating was not scrutinized in these prior studies.
 
 %Might children be sensitive to this difficulty, and thus seek to avoid errors by using easily-interpretable hypothesis scanning? Might an intervention that aids with hypothesis updating encourage the use of constraint-seeking questions? 
 %In this study, we explore how to alter the relative utilization of constraint-seeking
-%or hypothesis-scanning via.... \hl{display element, helping with updating.  Also
-%we look at developmental changes.}
-
-%\hl{describe more?}. % how was it done in prior work?
+%or hypothesis-scanning via.... display element, helping with updating.  Also we look at developmental changes.
 
 In the present study, we hypothesize that biases in the
 way children search for information (e.g., by favoring hypothesis scanning questions over
@@ -349,7 +337,7 @@ above are sequential, they likely rely on a common pool of cognitive and attenti
 are thus not completely independent.  In this case the cognitive load from planning questions,
 or from updating beliefs, may impair performance on either task.
 Second, hypothesis scanning questions might be easier for young children is that they produce 
-evidence that applies to a single hypothesis.  If instead children ask constaint-seeking questions, 
+evidence that applies to a single hypothesis.  If instead children ask constraint-seeking questions, 
 they must eliminate from the hypothesis space any possibilities that are ruled out by the new information. 
 This process could be cognitively taxing, and also prone to errors. Thus, although constraint-seeking 
 questions are often more informative in theory, they might not always be so to young children, particularly 
@@ -361,15 +349,11 @@ integrating evidence with the hypothesis space or had to undertake this process 
 expectation was that aiding children in coordinating evidence and beliefs would enable more sophisticated, and informative,
 inquiry behavior.  To evaluate this prediction we evaluated the quality of children's question asking ability
 against an object standard of informatively given by the EIG model described in more detailed below.
- We
-additionaly analyze our data specifically in terms of constraint-seeking and hypothesis
-scanning question.  Our
-central prediction was that assistance in belief updating should increase the relative EIG of children's questions
-and the relative utilization of constraint seeking question s.
-In addition, we tested children in \hl{two key age groups??} and expected that younger children
-would benefit more from the assistance than would older children. \hl{We need to mention age as a hypothesized
-factor otherwise there is not reason to run multiple ages as far as i can tell}
-
+ We additionally analyze our data specifically in terms of constraint-seeking and hypothesis-scanning questions.  
+Our central prediction was that assistance in belief updating should increase the relative EIG of children's questions
+and the relative utilization of constraint-seeking questions.
+Given that older children (8-10 years) have previously been found to use more constraint-seeking questions than younger children (5-7 years), we tested across these two age groups, expecting that younger children
+would benefit more from the assistance in hypothesis updating than would older children, and that the manipulation may increase the younger children's use of constraint-seeking questions.
 
 %Together this work is consistent with the view that active inquiry behaviors are deeply linked
 %to component cognitive processes such the representation of the task or
@@ -398,15 +382,14 @@ factor otherwise there is not reason to run multiple ages as far as i can tell}
 %In this study, children (ages 5-10) play multiple rounds of a self-guided 20-questions 
 %style iPad game with a structured but novel hypothesis space. 
 
-%\hl{todd says: We focus here on belief updating.  That this
-%can be a challenge for children to coordinate along with other processes in
+%We focus here on belief updating.  That this can be a challenge for children to coordinate along with other processes in
 %the task (i.e., asking questions).  In addition many theories of active
 %information seeking (e.g., information gain) include within the valuation of a
 %possible query a belief update step (Coenen \& Gureckis, 2015).  As a result
 %one might expect tasks which aid people in performing belief updating might
-%also improve their active information seeking.}
+%also improve their active information seeking.
 %
-%\hl{Todd: In our experiment children attempted to play a version of the Guess
+%Todd: In our experiment children attempted to play a version of the Guess
 %Who? game.  On each trial children could choose to click a button to obtain
 %information about a hidden insect.  There were different types of buttons
 %available (exemplars which just allowed children to ask if one specific insect
@@ -417,7 +400,7 @@ factor otherwise there is not reason to run multiple ages as far as i can tell}
 %to either help children with the updating step by automatically removing
 %from the set any insect which is inconsistent with evidence encountered so far.
 %Our primary dependent measure what the sequence and type of button
-%presses the children made as they learned to identify the insect.}
+%presses the children made as they learned to identify the insect.
 %\vspace{-.1cm}
 \section{Experiment}
 %\vspace{-.2cm}
@@ -459,8 +442,8 @@ years old who were recruited at the American Museum of Natural History's
 Discovery Room. Of the 134 children recruited, we analyze the data from 121 
 children (21 5-year-olds, 20 6-year-olds, 22 7-year-olds, 20 8-year-olds, 20 9-year-olds, 
 and 18 10-year-olds) who completed 5 or more rounds of the game.
-Participants were assigned in \hl{deterministically?} counterbalanced order to one of two between-subjects conditions:
-the automatic-update or manual-update condition. \hl{how many were assigned to each condition?}
+Participants were assigned in counterbalanced order to either 
+the automatic-update condition or the manual-update condition (67 per condition).
 
 \subsubsection{Stimuli}
 
@@ -479,39 +462,32 @@ between species of animals (specifically, many interactive exhibits involve inse
   \centering
   \includegraphics[width=0.4\textwidth]{figures/example_bugs}
   \caption{Examples of two insect body types with all 9 of the binary features present. Each round used one of 16 possible 
-body shapes. \hl{Should we show the other body types?} } % Each bug in a round had a unique combination of features.
+body shapes. } % Each insect in a round had a unique combination of features.
   \label{fig:example_bugs}
 \end{figure} 
 
 \subsubsection{Design}
 
-Across the sixteen items, some features were more frequent than others (e.g., one was relevant to eight of the insects), while some were very infrequent (e.g., two were relevant to only two insects), with an
-abstract structure shown in Figure~\ref{fig:feature_table} \hl{This should be a table.  Also it is not described very well.  Exemplar should maybe be insect.
-Maybe A-P could be explained?  What about the meaning of the 1 versus 0?}. 
-The abstract structure in Figure~
-\ref{fig:feature_table} was randomly assigned to the visual features for each 
-child (i.e., \hl{can you unpack this}), and then remained consistent across rounds. This gave child the 
-possibility to learn the quality of different features across the rounds.
-The design of the abstract sturcture introduced
-strong differences in the informational utility of each feature (F1-F9).  For example,
-given no other information it would be quite informative to ask about feature F1
+Across the sixteen exemplar insects (A-P in Table~\ref{fig:feature_table}), some binary (present or absent) features were more frequent than others (e.g., one was present on eight of the insects), while some were very infrequent (e.g., two were present on only two insects). Table~\ref{fig:feature_table} shows the abstract structure of the feature distribution. The features (F1-F9) in this semi-hierarchy were randomly assigned to the visual features for each 
+child (i.e., F1 might be mapped to color (1=green, 0=white) for one child, while F1 is mapped to leaf-eating (1=leaf, 0=no leaf) for another), and then remained consistent across rounds. 
+This gave child the possibility to learn the quality of different features across the rounds.
+The design of the abstract structure introduced strong differences in the informational utility of each feature (F1-F9).  
+For example, given no other information it would be quite informative to ask about feature F1
 because it is shared with half of the possible insects.  In contrast, feature
-F9 is less informative on the first trial of each round because most of the insects do no have this
-feature. 
+F9 is less informative on the first trial of each round because most of the insects do no have this feature. 
 
-\begin{figure}[h]
+\begin{table}[h]
   \centering
   \includegraphics[width=0.55\textwidth]{figures/feature_table}
-  \caption{The abstract feature structure of the 16 exemplars used in each round. 
-Each child had these abstract features randomly assigned to the visual 
-features, but had a consistent assignment used round-to-round. \hl{Should explain what the numbers mean.  Also the letters.}}
+  \caption{The abstract feature structure of the 16 insects (A-P) used in each round. 
+Each child had these abstract features (F1-F9) randomly assigned to the binary (present or absent) visual 
+features, but had a consistent assignment used from round to round. }
   \label{fig:feature_table}
-\end{figure} 
+\end{table} 
 
-Each of these features was visually represented on a button\hl{Refer to a figure that shows the layout?  i'd maybe give an overview of the display here}, available for children to tap with their finger.   An additional feature button depicted a particular body shape was always present but not relevant to the insects on display since they always
+Each of these features was visually represented on a button (see Figure~\ref{fig:task-overview}), available for children to tap with their finger.   An additional feature button depicted a particular body shape was always present but not relevant to the insects on display since they always
 shared the same body shape.  A tap on a feature button is effectively a ``constraint-seeking" question. 
-Instead of choosing a feature button, chidren could at any time query an exemplar by tapping it to determine if it was the hidden insect or not. This choice is equivalent
-to a ``hypothesis scanning" query.  
+Instead of choosing a feature button, children could at any time query an exemplar by tapping it to determine if it was the hidden insect or not. This choice is equivalent to a ``hypothesis-scanning" query.  
 The interactive elements of the display varied across conditions.  After making a feature query in the manual-update condition, children must select which insects (i.e., hypotheses) are consistent with the feedback.  In contrast, in the automatic-update condition the hypothesis space automatically updated to be consistent with the feedback received.
 
 \subsubsection{Procedure}
@@ -537,9 +513,7 @@ inconsistent with the feedback are eliminated, and the hypothesis space is thus 
 The elimination phase varied based on condition.
  In the automatic-update condition, after the feedback from a 
 feature query, subjects merely pressed the ``Eliminate'' button and all the no longer relevant insects 
-are eliminated (grayed out), and the game returned to the guessing phase \hl{Above it says there are
-two phases - query and elimination.  guessing phase is now introduced so maybe get the wording
-consistent.  I'll leave it to you George because I'm not sure what is what.  I think you mean query phase}. In the 
+are eliminated (grayed out), and the game returned to the query phase. In the 
 manual-update condition, after a subject made a feature query and saw feedback, 
 they had to select each insect that was consistent with the feedback for that feature, as 
 shown in the top right of Figure~\ref{fig:task-overview}. Insects were selected (denoted by a green box) by 
@@ -548,10 +522,9 @@ selecting insects did the experimenter press the ``Eliminate'' button, which eli
 any insects that were not selected. 
 
 Before children were allowed to begin, the experimenter explained a random selection of at least three of the feature 
-buttons. \hl{Not sure what "at least" means here.  also  there was not explanation of all the features?  some might be hard to 
-understand based on their symbols.  I moved this from someplace else but it feels a little out of place both in original location and here.}
-In the manual-update it was possible for mistakes to be made
-during the \hl{elimination phase?}. Insects that should have been eliminated but were kept (a `miss') 
+buttons (more if the child asked), and asked children to point to an exemplar exhibiting each of the explained features. 
+In the manual-update condition it was possible for mistakes to be made
+during the elimination phase, as the software did not aid in updating the hypothesis space. Insects that should have been eliminated but were kept (a `miss') 
 continued to be valid options.  Insects that were consistent with the query but wrongly eliminated (a `false alarm') 
 were grayed out.   Our analyses below take into account
 the role that such errors may have played in the manual-update condition.
@@ -583,15 +556,14 @@ and again either choose a feature button or query a single insect.}
 \subsection{Results}
 
 \subsubsection{Overall}
-% JEP: General / Cognition 
 
 % - mention that there was no effect of round!
 We analyzed only the first 10 rounds of each game (only 8 children played more than 
 10 rounds, including one who played 51 rounds). This covers 722 rounds from 121 
-children. The mean number of total queries (feature and exemplar) taken to complete a round was 6.5 in the automatic-update condition, and 7.6 in the manual-update condition. Although the median queries to complete a round in each condition was 6, the distributions were significantly different \hl{What distributions?  Different from what?  From 6 or from each other?} (Kolmogorov-Smirnov test, $D = 
-0.13$, $p<.01$). For comparison, we simulated 700 rounds of the game with an agent that clicked
-randomly in the task, choosing uniformly at random on the first click from 16 exemplars and 10 feature buttons, and continuing with whatever stimuli (and feature queries) remain after each click, while making no update errors. This random agent took on average 8.9 queries (median: 9) to complete a round---more queries than participants in either condition.
-This suggest at least minimal structure in children's active inquiry behavior.
+children (61 in the automatic condition and 60 in manual). The mean number of total queries (feature and exemplar) taken to complete a round was 6.5 in the automatic-update condition, and 7.6 in the manual-update condition. Although the median queries to complete a round in each condition was 6, the distributions of total queries per round for each condition were significantly different from each other (Kolmogorov-Smirnov test, $D = 0.13$, $p<.01$). 
+For comparison, we simulated 700 rounds of the game with an agent that clicked randomly in the task, 
+choosing uniformly at random on the first click from 16 exemplars and 10 feature buttons, and continuing with whatever stimuli (and feature queries) remain after each click, while making no update errors. This random agent took on average 8.9 queries (median: 9) to complete a round---more queries than participants in either condition.
+This suggests at least some structure in children's active inquiry behavior.
 
 
 \subsubsection{Qualitative Querying Behavior}
@@ -601,8 +573,7 @@ Participants' mean number of queries per round were subjected to an ANOVA with u
 a within-subject factor. This analysis indicated significant main effects of condition (F(1,229) = 4.60, $p<.05$) 
 and age group (F(1,229) = 12.20, $p<.001$), and no significant main effect of query type 
 (F(1,229) = 0.10, $p=.75$). Overall, older children required fewer queries of either type to complete a 
-round ($M_{5-7} = 4.2$, $M_{8-10} = 3.3$), also evidenced by a significant negative correlation \hl{between what and age? mean clicks?}
-with age ($t(119) = 3.24$, $p=.001$, $r=-.28$). There were significant interactions of condition 
+round ($M_{5-7} = 4.2$, $M_{8-10} = 3.3$), also evidenced by a significant negative correlation between participants' mean queries to complete a round and age ($t(119) = 3.24$, $p=.001$, $r=-.28$). There were significant interactions of condition 
 and query type (F(1,229) = 22.18, $p<.001$), and age group and query type (F(1,229) = 12.25, 
 $p<.001$), detailed below. No other interactions were significant (all F-values $<1$).  
 In comparison to the manual condition, 
@@ -628,13 +599,10 @@ constraint-seeking questions.
   \label{fig:clicks-per-agecond}
 \end{figure} 
 
-\hl{like the insect/bug issue the feature query/constraint seeking thing is a terminology confusion.  personally i like feature/exemplar but in order to connect
-with the developmental literature maybe we should use the other?}
-The finding of more feature queries in the automatic condition and more exemplar queries in the manual condition raises a number of questions. Are participants reluctant to use feature queries in the manual condition because of the difficulty of updating the hypothesis space? When manual-update participants do use a feature query, do they think more carefully about which feature they choose? We investigate response times in each condition to reveal how much care and thought participants are putting into making each type of query.
-\hl{The transitions between results sections are always phrased in terms of rhetorical questions which aren't my favorite.  they imply a type of
-exploratory data analysis that undermines some of the statistical tests used here.  Furthermore some of these specific questions would be hard to
-answer in reality, right...  I might just present the reaction time results and then discuss the possible interpretation of them afterwards rather than making
-this claim out front.  }
+% Todd: insect/bug issue the feature query/constraint seeking thing is a terminology confusion.  
+% personally i like feature/exemplar but in order to connect with the developmental literature maybe we should use the other?
+The finding of more feature queries in the automatic condition and more exemplar queries in the manual condition raises a number of questions about when and why participants are choosing particular queries in each condition. We next investigate response times to reveal how much thought participants are putting into making each type of query.
+%Are participants reluctant to use feature queries in the manual condition because of the difficulty of updating the hypothesis space? When manual-update participants do use a feature query, do they think more carefully about which feature they choose? 
 
 % \begin{figure}[!h]
 % \centering
@@ -748,16 +716,17 @@ queries are often available at other stages of the round.
 \end{equation}
 
 % moved discussion of EIG use to study children's decisions to intro
-In our study, the EIG for each participants' feature queries\footnote{Exemplar query EIGs are 
-less interesting, as they are a simple function of how many remaining hypotheses 
-there are. Participants' choice of feature query, on the other hand, indicates how 
+We analyze the EIG for each participants' feature queries separately, as well as in aggregate with the exemplar queries
+\footnote{Exemplar query EIGs alone are less interesting, as they are a simple function of how many hypotheses 
+remain. Participants' choice of feature query, on the other hand, indicates how 
 sensitive they are to the relevance of each feature--and to the context of their 
-current situation.\hl{But the context sensitivity also means choosing the feature query when it is better than
-any available exemplar query and not necessarily when they are matched.}} were computed, and their mean EIG was 
+current situation. However, as the space shrinks, it is interesting to see whether participants' persist in making (now less informative) feature queries, or switch to (increasingly informative) exemplar queries.} 
+Participants' mean feature query EIG was 
 subjected to an ANOVA with condition and age group (5-7 vs. 8-10) as between-subjects factors. 
 This ANOVA indicated significant main effects of condition (F(1,115) = 55.0, $p<.001$) 
 and age group (F(1,115) = 12.42, $p<.001$), with no significant interaction effect (F(1,115) = 0.2, $p>.05$).\footnote{The same significant effects and similar mean EIG values were obtained when analyzing only the first two feature queries per round, when manual- and automatic-update participants were on more equal footing (i.e., before further manual errors--which could raise or lower the EIG of the remaining feature queries).}
-Figure~\ref{fig:EIG_by_age} shows mean EIG per feature query by age group and condition, along with a baseline simulation showing the mean EIG of all the feature queries (i.e., as if each subject had chosen randomly from the feature queries). Note that although randomly-chosen features for the manual-update subjects have a higher EIG than for automatic-update subjects (driven in part by update errors quickly reducing the hypothesis space), the simulated random EIGs are far below the corresponding human data.
+The same ANOVA applied to participants' mean EIG of all queries indicated a marginally-significant main effect of condition (F(1,116) = 3.29, $p=.07$) and a significant main effect of age group (F(1,116) = 25.70, $p<.001$).
+Figure~\ref{fig:EIG_by_age} shows mean EIG per feature query (left) and for all queries (right) by age group and condition, along with a baseline simulation showing the mean EIG of all the feature queries (i.e., as if each subject had chosen randomly from the feature queries). Note that although randomly-chosen features for the manual-update subjects have a higher EIG than for automatic-update subjects (driven in part by update errors quickly reducing the hypothesis space), the simulated random EIGs are far below the corresponding human data.
 Mean EIG of feature queries for each subject was marginally significantly correlated with 
 age ($t(116)=1.77$, $p=.08$, $r=.16$), showing that older children tended to use more relevant feature queries. 
 The feature queries made by participants in the 
@@ -773,11 +742,24 @@ RTs are associated with more informative feature queries.
 % information gain conditioned on what they know? (duplicate feature clicks?
 
 \begin{figure}[t]
+  \begin{subfigure}{.42\textwidth}
   \centering
-  \includegraphics[width=0.55\textwidth]{figures/EIG_by_ageGroup_n_condition_with_random_sims}
-  \caption{Mean expected information gain for feature queries by age group and condition, 
+  \includegraphics[width=.9\linewidth]{figures/EIG_by_ageGroup_n_condition_with_random_sims}
+  \caption{Mean EIG for feature queries.}
+  \label{fig:sfig1}
+\end{subfigure}%
+\begin{subfigure}{.58\textwidth}
+  \centering
+  \includegraphics[width=.9\linewidth]{figures/EIGall_by_ageGroup_n_condition_with_random_sims}
+  \caption{Mean EIG for all queries.}
+  \label{fig:sfig2}
+\end{subfigure}
+ \caption{Mean expected information gain for feature queries by age group and condition, 
 with a simulation making random feature queries--in the same situations as subjects (not the earlier random agents)--for comparison. Manual-update subjects had higher EIG than automatic-update subjects, and both were better than random--but suboptimal (1). Older children had higher EIG than younger children. Bars show +/-1SE.}
-  \label{fig:EIG_by_age}
+\label{fig:EIG_by_age}
+ % \includegraphics[width=0.55\textwidth]{figures/EIG_by_ageGroup_n_condition_with_random_sims}
+ % \caption{}
+ % \label{fig:EIG_by_age}
 \end{figure} 
 
 \subsubsection{Click-by-click behavior}
@@ -787,12 +769,12 @@ Figure~\ref{fig:query-prop-click} shows the mean proportion of feature vs. exemp
 Both human conditions are quite different than the simulated random agent. 
 Rather, the response profile of human participants looks generally like the optimal sequence: 3 feature queries and then one (sometimes two) exemplar queries. However, as was shown earlier, participants rarely chose the most informative feature to query at any given time, and manual participants made a number of updating errors. Where does the higher EIG for manual-update feature queries come from? Are they choosing the best feature query from the start, or are they simply better at testing more contextually-relevant features later in the round?
 
-Figure~\ref{fig:EIG_by_click} shows mean EIG of feature queries by click index (ignoring exemplar clicks), with a simulation based on the participants' data for comparison: although following the same sequence of situations as participants, this simulation shows the EIG if a feature query had been chosen at random in each instance. 
+Figure~\ref{fig:EIG_by_click} shows the mean EIG of feature queries by feature query index (left), and for all queries (right), with a simulation based on the participants' data for comparison: although following the same sequence of situations as participants, this simulation shows the EIG if a query (just feature at left, or feature and exemplar at right) had been chosen at random in each instance. 
 Figure~\ref{fig:EIG_by_click} reveals that people in the two update conditions had similarly informative first queries--especially for the 5-7 year-olds, who were not much better than random, but that manual subjects' subsequent few feature queries were more informative than automatic subjects' or the random choices. That is to say, manual-update participants chose feature queries that were more contextually appropriate for the particular set of remaining hypotheses, in contrast to automatic-update participants who--despite finding an informative feature for the first query--paid less attention to the unfolding situation. In fact, after the initial high-quality query, the younger automatic-update participants chose queries with nearly the same EIG as the random simulation, implying that they more or less ignored the features of the remaining hypotheses. For older automatic-update participants, feature query EIG was better than random after the first query, although it remained below manual-update EIG across feature queries.
 %Feature queries are made at a rate that is correlated with the number of exemplars 
 %they are relevant to ($r=.79$, $t(8)=3.6$, $p<.01$). 
 
-\begin{figure}[!h]
+\begin{figure}[t] % [!h]
   \centering
   \includegraphics[width=0.75\textwidth]{figures/proportion_feat_queries_by_click} % 
   \vspace{-.1cm}
@@ -804,13 +786,35 @@ exemplar queries. Older children make a higher proportion of feature queries in 
   \vspace{-.1cm}
 \end{figure} 
 
- \begin{figure}[!h]
- \centering
-  \includegraphics[width=0.55\textwidth]{figures/info_gain_by_click_n_age_w_sims} % info_gain_by_click_w_sim_w_N
-  \caption{Subjects' mean expected information gain (EIG) of feature queries by click index (ignoring all exemplar clicks) by condition, with symbol size indicating frequency of occurrence. Although the first feature query--made when the full hypothesis space is possible--had nearly the same mean EIG in both conditions, the next few feature queries in the manual-update condition had higher mean EIG than the automatic condition. This suggests that manual-update subjects paid more attention to the remaining hypotheses after the first query, and made subsequent feature queries that were sensitive to the current context. Making four or more feature queries in a given round was quite rare, as most participants mostly switched to exemplar queries after the second or third feature query. Bars show +/-1SE.}
+
+
+
+ \begin{figure}[t] %[!h]
+ %\centering
+  \begin{subfigure}{.57\textwidth}
+  \centering
+  \includegraphics[width=.98\linewidth]{figures/info_gain_by_click_n_age_w_sims}
+  \caption{Mean EIG by feature query.}
+  \label{fig:sfig1}
+\end{subfigure}%
+\begin{subfigure}{.43\textwidth}
+  \centering
+  \includegraphics[width=.98\linewidth]{figures/all_info_gain_by_click_n_age_w_sims}
+  \caption{Mean EIG by all queries.}
+  \label{fig:sfig2}
+\end{subfigure}
+  %\includegraphics[width=0.55\textwidth]{figures/info_gain_by_click_n_age_w_sims} % info_gain_by_click_w_sim_w_N
+  \caption{Subjects' mean expected information gain (EIG) of feature queries (left) and all queries (right) by click index by condition. At left, although the first feature query--made when the full hypothesis space is possible--had nearly the same mean EIG in both conditions, the next few feature queries in the manual-update condition had higher mean EIG than the automatic condition. This suggests that manual-update subjects paid more attention to the remaining hypotheses after the first query, and made subsequent feature queries that were sensitive to the current context. Making four or more feature queries in a given round was quite rare, as most participants mostly switched to exemplar queries after the second or third feature query. EIG for all queries (right) show a similar pattern (and a stronger advantage over the simulation), meaning that manual participants are better at switching to exemplar queries at the right time, whereas automatic participants may be persisting in querying (now uninformative) features. Bars show +/-1SE.}
   \label{fig:EIG_by_click}
  \end{figure} 
 
+
+% \begin{figure}[t]  %[!h]
+ %\centering
+ % \includegraphics[width=0.55\textwidth]{figures/all_info_gain_by_click_n_age_w_sims} % info_gain_by_click_w_sim_w_N
+ % \caption{Subjects' mean expected information gain (EIG) of all queries by click index by condition, with symbol size indicating frequency of occurrence. Bars show +/-1SE.}
+%  \label{fig:EIGall_by_click}
+% \end{figure} 
 
 \section{General Discussion}
 
