@@ -439,11 +439,11 @@ design more effective educational exhibits that target children of different age
 
 Participants in this experiment were 134 children between the ages of 5 and 10 
 years old who were recruited at the American Museum of Natural History's 
-Discovery Room. Of the 134 children recruited, we analyze the data from 121 
+Discovery Room. Of the 134 children recruited (67 per condition), we analyze the data from 121 
 children (21 5-year-olds, 20 6-year-olds, 22 7-year-olds, 20 8-year-olds, 20 9-year-olds, 
 and 18 10-year-olds) who completed 5 or more rounds of the game.
 Participants were assigned in counterbalanced order to either 
-the automatic-update condition or the manual-update condition (67 per condition).
+the automatic-update condition or the manual-update condition (automatic: 32 5-7 year-olds and 29 8-10 year-olds; manual: 31 5-7 year-olds and 29 8-10 year-olds).
 
 \subsubsection{Stimuli}
 
@@ -494,26 +494,26 @@ The interactive elements of the display varied across conditions.  After making 
 
 After being trained by an experimenter on a simpler version of the task with unrelated stimuli\footnote{Download 
 full task code and instruction scripts: \texttt{https://github.com/kachergis/bugguess}} (a dog searching dog houses) so that they understood how to query exemplars and features, and how 
-to eliminate hypotheses, children played 5 or more rounds of an iPad game asking them 
+to eliminate hypotheses, children played 5 or more rounds of the iPad game asking them 
 to identify which one of 16 insects was hidden under a cartoon rug (see Figure~\ref{fig:task-overview}). 
 The task alternated between the query phase and the elimination phase. In the query phase, 
 players could either query an individual insect by tapping one (equivalent 
 to asking, ``Is this the hidden bug?''), or choose use a feature query button (e.g., the green button asks 
 ``Is the hidden bug green?'') to find out whether the hidden insect had a particular feature. 
 
-If a single exemplar was tapped on (i.e., a hypothesis-scanning query), and item was the experimenter-determined
+If a single exemplar was tapped on (i.e., a hypothesis-scanning query), and the item was the experimenter-determined
 hidden insect, a smiley face appeared and the round was completed.  If the tapped exemplar 
-was not the hidden insect, a red ``X'' was shown on top of the tapped insect and the insect becomes 
+was not the hidden insect, a red ``X'' was shown on top of the tapped insect and the insect became
 grayed out (i.e., eliminated). 
 
-After a feature query (i.e., constraint-seeking query), the insect under the rug gives feedback, saying 
-``Yes!'' (it has the feature; narrated by the experimenter), or ``No!'' (it does not have 
-the feature). This is followed by the elimination phase, during which insect that are 
-inconsistent with the feedback are eliminated, and the hypothesis space is thus narrowed. 
+After a feature query (i.e., constraint-seeking query), the insect under the rug gave feedback, saying 
+``Yes!'' (indicating it had the feature; narrated by the experimenter), or ``No!'' (if it did not have 
+the feature). This was followed by the elimination phase, during which insects that were 
+inconsistent with the feedback were eliminated, and the hypothesis space was thus narrowed. 
 The elimination phase varied based on condition.
  In the automatic-update condition, after the feedback from a 
 feature query, subjects merely pressed the ``Eliminate'' button and all the no longer relevant insects 
-are eliminated (grayed out), and the game returned to the query phase. In the 
+were eliminated (grayed out), and the game returned to the query phase. In the 
 manual-update condition, after a subject made a feature query and saw feedback, 
 they had to select each insect that was consistent with the feedback for that feature, as 
 shown in the top right of Figure~\ref{fig:task-overview}. Insects were selected (denoted by a green box) by 
@@ -525,7 +525,7 @@ Before children were allowed to begin, the experimenter explained a random selec
 buttons (more if the child asked), and asked children to point to an exemplar exhibiting each of the explained features. 
 In the manual-update condition it was possible for mistakes to be made
 during the elimination phase, as the software did not aid in updating the hypothesis space. Insects that should have been eliminated but were kept (a `miss') 
-continued to be valid options.  Insects that were consistent with the query but wrongly eliminated (a `false alarm') 
+continued to be visible options.  Insects that were consistent with the query but wrongly eliminated (a `false alarm') 
 were grayed out.   Our analyses below take into account
 the role that such errors may have played in the manual-update condition.
 In the event that the hidden insect was wrongly eliminated during a manual-update error, 
@@ -570,7 +570,7 @@ This suggests at least some structure in children's active inquiry behavior.
 
 Participants' mean number of queries per round were subjected to an ANOVA with update condition 
 (automatic vs. manual) and age group (5-7 vs. 8-10) as between-subjects factors and query type as 
-a within-subject factor. This analysis indicated significant main effects of condition (F(1,229) = 4.60, $p<.05$) 
+a within-subject factor.\footnote{Behavior across rounds was investigated for evidence of learning, but no consistent changes in behavior were evident.} This analysis indicated significant main effects of condition (F(1,229) = 4.60, $p<.05$) 
 and age group (F(1,229) = 12.20, $p<.001$), and no significant main effect of query type 
 (F(1,229) = 0.10, $p=.75$). Overall, older children required fewer queries of either type to complete a 
 round ($M_{5-7} = 4.2$, $M_{8-10} = 3.3$), also evidenced by a significant negative correlation between participants' mean queries to complete a round and age ($t(119) = 3.24$, $p=.001$, $r=-.28$). There were significant interactions of condition 
@@ -716,7 +716,7 @@ queries are often available at other stages of the round.
 \end{equation}
 
 % moved discussion of EIG use to study children's decisions to intro
-We analyze the EIG for each participants' feature queries separately, as well as in aggregate with the exemplar queries
+We analyze the EIG for each participants' feature queries separately, as well as in aggregate with the exemplar queries.
 \footnote{Exemplar query EIGs alone are less interesting, as they are a simple function of how many hypotheses 
 remain. Participants' choice of feature query, on the other hand, indicates how 
 sensitive they are to the relevance of each feature--and to the context of their 
