@@ -292,7 +292,7 @@ models in our paper to allow an objective measurement of the quality of their in
 
 While it is clear there are developmental changes in how children formulate questions, less work has considered 
 developmental changes in how children make use of the new evidence that their questions reveal~\cite<but see>{Denison:2013kk}.  
-However, there are many reasons to think that these two behaviors might be deeply intwined.
+However, there are many reasons to think that these two behaviors might be deeply entwined.
 The active inquiry loop in Figure~\ref{fig:sensemaking_loop} suggests one obvious interaction because if
 questions or information gathering actions are made on the basis of current beliefs, and those beliefs
 are wrong, then inquiry will be less effective~\cite<c.f., research on the hot stove effect,>{Denrell:2001mw,Rich:2015qo}.  
@@ -581,8 +581,8 @@ and again either choose a feature button or query a single insect.}
 We analyzed only the first 10 rounds of each game (only 8 children played more than 
 10 rounds, including one who played 51 rounds). This covers 722 rounds from 121 
 children (61 in the automatic condition and 60 in manual). The mean number of total queries (feature and exemplar) taken to complete a round was 6.5 in the automatic-update condition, and 7.6 in the manual-update condition. Although the median queries to complete a round in each condition was 6, the distributions of total queries per round for each condition were significantly different from each other (Kolmogorov-Smirnov test, $D = 0.13$, $p<.01$). 
-For comparison, we simulated 700 rounds of the game with an agent that clicked randomly in the task, 
-choosing uniformly at random on the first click from 16 exemplars and 10 feature buttons, and continuing with whatever stimuli (and feature queries) remain after each click, while making no update errors. This random agent took on average 8.9 queries (median: 9) to complete a round---more queries than participants in either condition.
+For comparison, we simulated 700 rounds of the game with an agent that queried randomly in the task, 
+choosing uniformly at random on the first query from 16 exemplars and 10 feature buttons, and continuing with whatever stimuli (and feature queries) remain after each query, while making no update errors. This random agent took on average 8.9 queries (median: 9) to complete a round---more queries than participants in either condition.
 This suggests at least some structure in children's active inquiry behavior.
 
 
@@ -601,8 +601,8 @@ there were fewer exemplar queries in the automatic condition ($M_{man} = 5.0$,
 $M_{auto} = 3.2$, $t(103.5)=4.1$, $p<.001$), while there were more feature queries 
 in the automatic condition ($M_{auto} = 3.8$) ($M_{man} = 3.3$, $t(102.9)=2.1$, 
 $p<.05$).
-These query rates are all lower than the simulated random rounds' mean number of feature queries (6.5) and exemplar queries (5.3), but above the optimal.\footnote{Note that although there are at first more exemplars (16) than feature buttons (10), after the first click or two there will likely be few 
-exemplars remaining to click, which is why the expected number of exemplar 
+These query rates are all lower than the simulated random rounds' mean number of feature queries (6.5) and exemplar queries (5.3), but above the optimal.\footnote{Note that although there are at first more exemplars (16) than feature buttons (10), after the first query or two there will likely be few 
+exemplars remaining to query, which is why the expected number of exemplar 
 queries is lower than the expected number of feature queries in the simulation.} 
 
 Figure~\ref{fig:clicks-per-agecond} shows the average number of query types used per 
@@ -744,11 +744,10 @@ current situation. However, as the space shrinks, it is interesting to see wheth
 Participants' mean feature query EIG was 
 subjected to an ANOVA with condition and age group (5-7 vs. 8-10) as between-subjects factors. 
 This ANOVA indicated significant main effects of condition (F(1,115) = 55.0, $p<.001$) 
-and age group (F(1,115) = 12.42, $p<.001$), with no interaction (F(1,115) = 0.2, $p>.05$).\footnote{The same significant effects and similar mean EIG values were obtained when analyzing only the first two feature queries per round, when manual- and automatic-update participants were on more equal footing (i.e., before further manual errors--which could raise or lower the EIG of the remaining feature queries).}
-\hl{The same ANOVA applied to participants' mean EIG of all queries indicated a marginally-significant main effect of condition (F(1,116) = 3.29, $p=.07$) and a significant main effect of age group (F(1,116) = 25.70, $p<.001$).}
+and age group (F(1,115) = 12.42, $p<.001$), with no significant interaction (F(1,115) = 0.2, $p>.05$).\footnote{The same significant effects and similar mean EIG values were obtained when analyzing only the first two feature queries per round, when manual- and automatic-update participants were on more equal footing (i.e., before further manual errors--which could raise or lower the EIG of the remaining feature queries).}
+The same ANOVA applied to participants' mean EIG of all queries indicated a significant main effect of condition (F(1,116) = 19.06, $p< .001$) and a significant main effect of age group (F(1,116) = 16.16, $p<.001$), with no significant interaction (F(1,116) = 0.58, $p>.05$).
 Figure~\ref{fig:EIG_by_age} shows mean EIG per feature query (left) and for all queries (right) by age group and condition, along with a baseline simulation showing the mean EIG of all the feature queries (i.e., as if each subject had chosen randomly from the feature queries). Note that although randomly-chosen features for the manual-update subjects have a slightly higher EIG than for automatic-update subjects (driven in part by update errors quickly reducing the hypothesis space), the simulated random EIGs are far below the corresponding human data.
-\hl{Mean EIG of feature queries for each subject was marginally correlated with 
-age ($t(116)=1.77$, $p=.08$, $r=.16$), showing that older children tended to use more relevant feature queries.}
+Feature queries made by 8-10 year-olds had significantly higher EIG than those made by 5-7 year-olds ($M_{8-10} = .70$, $M_{5-7} = .64$, $t(116) = 2.62$,  $p=.001$), showing that older children tended to use more relevant feature queries.
 The feature queries made by participants in the 
 automatic condition had significantly lower EIG than those made in the manual 
 condition ($M_{auto} = .60$, $M_{man} = .74$, $t(116) = 5.49$,  $p<.001$). Thus, 
@@ -759,7 +758,6 @@ participants. Along with the reaction time results described above, this suggest
 thought more before making their choices and in fact performed better.  Indeed, there was a weak but significant 
 correlation of participants' mean feature query RT and EIG ($r=.20$, $t(116)=2.17$, $p<.05$), verifying that longer 
 RTs are associated with more informative feature queries.
-% information gain conditioned on what they know? (duplicate feature clicks?
 
 \begin{figure}[t]
   \begin{subfigure}{.42\textwidth}
@@ -782,12 +780,10 @@ with a simulation making random feature queries--in the same situations as subje
  % \label{fig:EIG_by_age}
 \end{figure} 
 
-\subsubsection{Click-by-click behavior}
+\subsubsection{Query-by-query behavior}
 %Individual strategies: mostly exemplar vs. feature queries? 
-\hl{THERE IS NO CLICKS!  Id call this query-by-query behavior or question-by-question.  you aren't analyzing e.g., touches to the 'eliminate' button.
-Within round analysis isn't bad either}
 
-Figure~\ref{fig:query-prop-click} shows the mean proportion of feature vs. exemplar queries by click index within a round for each update condition split by age group, contrasted with simulated agents choosing any available buttons uniformly at random throughout the game. Older children show a much higher proportion of feature queries in the first three clicks of the automatic condition, and the first two of the manual condition. In both update conditions, the first three clicks are more likely to be feature than exemplar queries, and automatic-update subjects often make a fourth feature query before likely moving to exemplar queries. 
+Figure~\ref{fig:query-prop-click} shows the mean proportion of feature vs. exemplar queries by query index within a round for each update condition split by age group, contrasted with simulated agents choosing any available buttons uniformly at random throughout the game. Older children show a much higher proportion of feature queries in the first three clicks of the automatic condition, and the first two of the manual condition. In both update conditions, the first three clicks are more likely to be feature than exemplar queries, and automatic-update subjects often make a fourth feature query before likely moving to exemplar queries. 
 Both human conditions are quite different than the simulated random agent. 
 Rather, the response profile of human participants looks generally like the optimal sequence: 3 feature queries and then one (sometimes two) exemplar queries. However, as was shown earlier, participants rarely chose the most informative feature to query at any given time, and manual participants made a number of updating errors. Where does the higher EIG for manual-update feature queries come from? Are they choosing the best feature query from the start, or are they simply better at testing more contextually-relevant features later in the round?
 
@@ -800,10 +796,10 @@ Figure~\ref{fig:EIG_by_click} reveals that people in the two update conditions h
   \centering
   \includegraphics[width=0.75\textwidth]{figures/proportion_feat_queries_by_click} % 
   \vspace{-.1cm}
-  \caption{Proportion of feature vs. exemplar queries by click for each update condition, with a randomly-clicking agent for comparison. People in both conditions are more likely to make feature queries rather than 
-exemplar queries in the first three clicks of a round, but manual-update participants 
+  \caption{Proportion of feature vs. exemplar queries by query for each update condition, with a randomly-querying agent for comparison. People in both conditions are more likely to make feature queries rather than 
+exemplar queries in the first three queries of a round, but manual-update participants 
 move more quickly to exemplar queries, and are overall more likely to make 
-exemplar queries. Older children make a higher proportion of feature queries in the first few clicks of both conditions.}
+exemplar queries. Older children make a higher proportion of feature queries in the first few queries of both conditions.}
   \label{fig:query-prop-click}
   \vspace{-.1cm}
 \end{figure} 
@@ -815,18 +811,18 @@ exemplar queries. Older children make a higher proportion of feature queries in 
  %\centering
   \begin{subfigure}{.57\textwidth}
   \centering
-  \includegraphics[width=.98\linewidth]{figures/info_gain_by_click_n_age_w_sims}
+  \includegraphics[width=.97\linewidth]{figures/info_gain_by_click_n_age_w_sims}
   \caption{Mean EIG by feature query.}
   \label{fig:sfig1}
 \end{subfigure}%
 \begin{subfigure}{.43\textwidth}
   \centering
-  \includegraphics[width=.98\linewidth]{figures/all_info_gain_by_click_n_age_w_sims}
+  \includegraphics[width=.99\linewidth]{figures/all_info_gain_by_click_n_age_w_sims}
   \caption{Mean EIG by all queries.}
   \label{fig:sfig2}
 \end{subfigure}
   %\includegraphics[width=0.55\textwidth]{figures/info_gain_by_click_n_age_w_sims} % info_gain_by_click_w_sim_w_N
-  \caption{Subjects' mean expected information gain (EIG) of feature queries (left) and all queries (right) by click index by condition. At left, although the first feature query--made when the full hypothesis space is possible--had nearly the same mean EIG in both conditions, the next few feature queries in the manual-update condition had higher mean EIG than the automatic condition. This suggests that manual-update subjects paid more attention to the remaining hypotheses after the first query, and made subsequent feature queries that were sensitive to the current context. Making four or more feature queries in a given round was quite rare, as most participants mostly switched to exemplar queries after the second or third feature query. EIG for all queries (right) show a similar pattern (and a stronger advantage over the simulation), meaning that manual participants are better at switching to exemplar queries at the right time, whereas automatic participants may be persisting in querying (now uninformative) features. Bars show +/-1SE.}
+  \caption{Subjects' mean expected information gain (EIG) of feature queries (left) and all queries (right) by query index by condition. At left, although the first feature query--made when the full hypothesis space is possible--had nearly the same mean EIG in both conditions, the next few feature queries in the manual-update condition had higher mean EIG than the automatic condition. This suggests that manual-update subjects paid more attention to the remaining hypotheses after the first query, and made subsequent feature queries that were sensitive to the current context. Making four or more feature queries in a given round was quite rare, as most participants mostly switched to exemplar queries after the second or third feature query. EIG for all queries (right) show a similar pattern (and a stronger advantage over the simulation), meaning that manual participants are better at switching to exemplar queries at the right time, whereas automatic participants may be persisting in querying (now uninformative) features. Bars show +/-1SE.}
   \label{fig:EIG_by_click}
  \end{figure} 
 
@@ -852,7 +848,7 @@ In line with previous research \cite{Mosher:1966,Ruggeri:2014}, the present stud
 %From this qualitative analysis alone, then, it is tempting to conclude that automatic updating leads to a better querying strategy than manual updating.
 
 However, in terms of expected information gain, a context-sensitive measure of how well a chosen feature bisects the remaining hypothesis space, children in the automatic-update condition made less informative feature queries. We 
-suggest that the greater mental effort required by manual updating actually lead 
+suggest that the greater mental effort required by manual updating actually led 
 to more careful consideration of which feature query to use, and ultimately a better choice. This is a type of desirable difficulty in the sense that aspects that made the learning task ostensibly more difficult led to more sophisticated question asking behavior.  Indeed, response times for feature queries were slower under manual updating, indicating that greater thought went into making those choices.  
 
 Our results provide important nuance to recent findings showing that children's question asking behavior conforms to the
